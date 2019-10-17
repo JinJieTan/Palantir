@@ -1,0 +1,8 @@
+{
+  "name": "desktop-tiktok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JinJieTan/Desktop-TikTok.git",
+  "author": "tanjinjie",
+  "license": "MIT"
+}

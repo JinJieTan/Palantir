@@ -13,20 +13,26 @@
 
 涉及到的技术栈 
 
-1. React 
-2. Electron 
-3. webscoket协议和UDP连接等
-4. TCP长链接
-5. Node.js
-6. express框架
-7. Ant-Desgin等UI框架
-8. webRTC技术
-9. Restfult风格接口开发
+1. `React `
+2. `Electron `
+3. `webscoket`协议和`UDP`连接等
+4. `TCP`长链接
+5. `Node.js`
+6. `express`框架
+7. `Ant-Desgin`等`UI`框架
+8. `webRTC`技术
+9. `Restfult`风格接口开发
 10. 极致的性能优化等
 
 
 > 短期暂不加入打包和C++插件等功能，因为搭建那些环境比较复杂，一步一步来。
 
+
+请开发者切换到`dev`分支,进行开发
+
+然后 ` git checkout -b dev/(name) `   这里的`name`是名字的简写
+
+最所有代码合并在`dev`分支   `master`分支作为正式版本的分支 
 
 
 
