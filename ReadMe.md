@@ -27,6 +27,7 @@
 > 短期暂不加入打包和 C++插件等功能，因为搭建那些环境比较复杂，一步一步来。
 
 请开发者切换到`dev`分支
+首先 `git checkout dev`
 
 然后 `git checkout -b dev/(name)` 这里的`name`是作为开发者，你的名字的简写
 
@@ -37,6 +38,19 @@
 由于项目本身使用了`electron`,本身它依赖于`Chromium`,国内使用`cnpm`下载是最快的
 
 如果你下载依赖比较慢，我建议你使用`cnpm`（即使你设置了淘宝镜像）
+
+#### 开发人员必读
+
+代码只能推送到`dev`分支 每次先拉取最新的`dev`分支
+
+需要推送当前自己分支代码时，先提交到本地
+
+然后`git checkout dev`
+
+`git merge dev/(name)`合并你分支的最新代码
+
+`git push origin dev:dev`推送代码到`dev`分支即可
+
 
 #### 整体技术架构
 
