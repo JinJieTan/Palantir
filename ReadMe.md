@@ -13,7 +13,7 @@
 ```
 npm i 
 
-npm dev 
+npm run dev 
 
 npm start 
 ```
