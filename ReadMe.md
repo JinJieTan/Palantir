@@ -40,9 +40,9 @@ npm start
 请开发者切换到`dev`分支
 首先 `git checkout dev`
 
-然后 `git checkout -b dev/(name)` 这里的`name`是作为开发者，你的名字的简写
+然后 `git checkout -b dev-name` 这里的`name`是作为开发者，你的名字的简写
 
-每个人对应有一个自己的分支,`dev/name`
+每个人对应有一个自己的分支,`dev-name`
 
 最所有代码合并在`dev`分支 `master`分支作为正式版本的分支
 
@@ -58,7 +58,7 @@ npm start
 
 然后`git checkout dev`
 
-`git merge dev/(name)`合并你分支的最新代码
+`git merge dev-name`合并你分支的最新代码
 
 `git push origin dev:dev`推送代码到`dev`分支即可
 
