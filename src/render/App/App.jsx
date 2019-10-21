@@ -1,11 +1,28 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'dva/router';
+import { connect } from 'dva';
 import ErrorBoundary from './ErrorBoundary/';
 import Login from './Login/index';
 import Video from './Video/index';
 import './globalstyle/index.css';
-import { connect } from 'dva';
 class App extends React.PureComponent {
+  componentDidMount() {
+  
+    const ws = new WebSocket('ws://localhost:8080');
+    ws.onopen = function() {
+      ws.send('123');
+      console.log('open');
+    };
+    ws.onmessage = function() {
+      console.log('onmessage');
+    };
+    ws.onerror = function() {
+      console.log('onerror');
+    };
+    ws.onclose = function() {
+      console.log('onclose');
+    };
+  }
   render() {
     return (
       <HashRouter>

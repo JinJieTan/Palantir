@@ -19,16 +19,16 @@
 初次下载使用 推荐使用
 
 ```
-npm i 
+npm i
 
-// terminal 1:
-npm run dev 
+ 
+npm run dev
 
-// terminal 2:
-npm start 
+npm start
 ```
 
-> Note: 访问端口号由 `global.config.js `文件控制 ，可以手动更改,如果出现端口号被占用，可以使用`netstat`杀掉那条占用，也可以更换端口号
+访问端口号由 `global.config.js`文件控制 ，可以手动更改,如果出现端口号被占用，可以使用`netstat`杀掉那条占用，也可以更换端口号
+ 
 
 项目本身使用了`electron`,本身它依赖于`Chromium`,国内使用`cnpm`下载是最快的。
 
@@ -87,5 +87,42 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 
 后面会完善代码检查, 配置commit-lint 等。
 
+ 
+#### 整体技术架构
 
+![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
 
+#### 项目后期需要的环境
+
+1.全局安装 Redis
+
+2.全局安装 Visual Studio,win10 SDK（windows 系统），或者全局安装 Xcode(Mac 系统)，特殊情况可以跟我交流，可以采用第三方形式运行编译 C++插件
+
+3.全局安装 mongodb、mysql（网上寻找）
+
+4.全局安装 docker
+
+5.后期需要的再补充
+
+#### 项目目前的服务端代码编写完成情况
+
+1.登陆鉴权已经完成，使用 redis 持久化存储
+
+2.短视频、第一帧图片的服务器已经搭建好，等部署，同第一条
+
+3.webRTC 视频直播代码已经准备好，等部署和项目进度推荐
+
+4.IM 文字通讯，待完善
+
+5.其余中间件 UDP 链接等待完善
+
+6.如果你想要获取后端核心代码，那么你需要对项目提出相当的贡献，我将开源给你。否则就会以云端形式部署
+
+#### 目前核心的问题点
+
+1.git 代码管理，提交代码需要提交 pull request
+
+2.根据原型图开发，分组分模块
+
+3.技术栈的学习,核心点的理解
+ 
