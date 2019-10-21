@@ -8,7 +8,6 @@ export default class App extends React.PureComponent {
         <button
           onClick={async () => {
             const isNoPassword = window.confirm('是否选择退出免密码登陆？');
-            console.log(isNoPassword);
             if (isNoPassword) {
               const result = await clearSession();
               if (result.code === 0) {

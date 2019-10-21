@@ -1,5 +1,5 @@
 {
-  "name": "desktop-tiktok",
+  "name": "desktop-Palantir",
   "version": "1.0.0",
   "repository": "https://github.com/JinJieTan/Desktop-TikTok.git",
   "author": "Peter 谭金杰",
@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ./src/main/main.js",
     "dev": "webpack-dev-server --config ./config/webpack.dev.js",
-    "hot-server": "nodemon ./server/index.js"
+    "start-hot-server": "nodemon ./server/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",

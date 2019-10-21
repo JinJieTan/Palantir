@@ -24,14 +24,17 @@ class App extends React.PureComponent {
   }
 
   handleLogin = async () => {
+    //点击发送此时应该鉴权 已经保存在内存中 通过this.username 和 this.password 获取～
+
     const result = await login({ username: this.username, password: sha1(this.password) });
     if (result.code === 0 || result.code === 1) {
       this.username = '';
       this.password = '';
-      alert('登陆成功');
+      alert(result.data);
       this.props.history.replace('/video');
     } else {
-      alert('请求失败');
+      alert(result.data);
+      return;
     }
   };
 
@@ -79,7 +82,7 @@ class App extends React.PureComponent {
           <button className="login-button" onClick={this.handleLogin}>
             登陆
           </button>
-          <button className="login-button">注册</button>
+          <button className="login-button">自动注册</button>
         </div>
       </div>
     );
