@@ -7,33 +7,49 @@
 ```
 453089136@qq.com  Peter 谭金杰
 ```
+
 > 本项目于 2019 年 10 月 17 日启动
 
 # 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
 
-
 #development
 
-初次下载使用 推荐使用
+初次下载使用 推荐使用npm下载
+
+首先全局安装 redis（网上找办法）
+
+命令输入redis-server 启动redis
+
+然后全局安装 nodemon  使用:
 
 ```
+npm i nodemon -g 
+
+```
+
+然后
+
+```
+
+
 npm i
 
- 
+
 npm run dev
 
 npm start
+
+npm run start-hot-server
+
 ```
 
 访问端口号由 `global.config.js`文件控制 ，可以手动更改,如果出现端口号被占用，可以使用`netstat`杀掉那条占用，也可以更换端口号
- 
 
 项目本身使用了`electron`,本身它依赖于`Chromium`,国内使用`cnpm`下载是最快的。
 
 如果你下载依赖比较慢，我建议你使用`cnpm`（即使你设置了淘宝镜像）
-
 
 # 涉及到的技术
 
@@ -60,7 +76,7 @@ npm start
 
 每个人对应有一个自己的分支 `develop/name`， 此分支作为自己独立的开发分支。
 
-如果需要开发新功能， 请在此分枝上新建feature 分支， 比如：
+如果需要开发新功能， 请在此分枝上新建 feature 分支， 比如：
 
 ```
 git checkout -branch feature/hello-world
@@ -75,7 +91,7 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 
 #PR 规范
 
-提交PR的时候， 注意带一些简要的信息提示， 比如：
+提交 PR 的时候， 注意带一些简要的信息提示， 比如：
 
 - docs: 只改到了文档
 - feat: 加入一个新特性
@@ -85,9 +101,8 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 - style: 格式修改，如空格、增加分号
 - test: 增加遗漏的测试用例，或更正测试用例
 
-后面会完善代码检查, 配置commit-lint 等。
+后面会完善代码检查, 配置 commit-lint 等。
 
- 
 #### 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
@@ -125,4 +140,3 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 2.根据原型图开发，分组分模块
 
 3.技术栈的学习,核心点的理解
- 
