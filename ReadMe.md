@@ -66,3 +66,4 @@ npm start
 #### 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
+
