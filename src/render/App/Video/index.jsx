@@ -4,7 +4,7 @@ export default class App extends React.PureComponent {
   render() {
     return (
       <div>
-        <h1>Video</h1>
+        <h1>Video11</h1>
         <button
           onClick={async () => {
             const isNoPassword = window.confirm('是否选择退出免密码登陆？');
