@@ -18,7 +18,7 @@
 
 #### 产品原型策划人员
 
-[![listnameY](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/listnameY.png)](https://github.com/listnameY) [![myselfyyl](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/myselfyyl.png)](https://github.com/myselfyyl) ![[susuie](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/susuie.png)](https://github.com/susuie)
+[![listnameY](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/listnameY.png)](https://github.com/listnameY) [![myselfyyl](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/myselfyyl.png)](https://github.com/myselfyyl) [![susuie](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/susuie.png)](https://github.com/susuie)
 
 #### 视频资源提供人员
 
