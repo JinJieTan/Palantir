@@ -10,6 +10,10 @@
 
 > 本项目于 2019 年 10 月 17 日启动
 
+#### 如果你想加入我们，欢迎关注我们的微信公众号：前端巅峰
+
+#### 由于开源项目开发，需要购买服务器等，也需要资金成本，耗费成员精力，如果你想资助我们，可以在最下方扫码支付
+
 # 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
@@ -100,8 +104,6 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 
 后面会完善代码检查, 配置 commit-lint 等。
 
- 
-
 #### 项目后期需要的环境
 
 1.全局安装 Redis
@@ -143,3 +145,13 @@ restful 接口 返回`{code:0 或 1,data:xxx}`
 code 为 0 即成功，1 即为失败
 
 data 是返回的说明
+
+#### 联系、赞助我们
+
+所有一切收到的赞助金额将会用于服务器维护，持续迭代更新维护 （因为这个项目需要用到比较的服务器）
+
+联系我们 请关注微信公众号：`前端巅峰`
+
+赞助我们 请扫码，谢谢
+
+![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/WechatIMG5.jpeg)
