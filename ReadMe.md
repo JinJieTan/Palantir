@@ -18,11 +18,11 @@
 
 #### 产品原型策划人员
 
-![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/listnameY.png)(https://github.com/listnameY) ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/myselfyyl.png)(https://github.com/myselfyyl) ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/susuie.png)(https://github.com/susuie)
+[![listnameY](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/listnameY.png)](https://github.com/listnameY) [![myselfyyl](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/myselfyyl.png)](https://github.com/myselfyyl) ![[susuie](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/susuie.png)](https://github.com/susuie)
 
 #### 视频资源提供人员
 
-![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/xingkongv.png)(https://github.com/xingkongv) 
+[![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/xingkongv.png)](https://github.com/xingkongv)
 
 # 整体技术架构
 
