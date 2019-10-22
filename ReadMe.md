@@ -18,9 +18,7 @@
 
 初次下载使用 推荐使用npm下载
 
-首先全局安装 redis（网上找办法）
-
-命令输入redis-server 启动redis
+服务器已经部署到阿里云,我们只需要专注开发即可
 
 然后全局安装 nodemon  使用:
 
@@ -41,7 +39,6 @@ npm run dev
 
 npm start
 
-npm run start-hot-server
 
 ```
 

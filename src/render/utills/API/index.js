@@ -3,7 +3,8 @@
 import ajax from './ajax';
 //使用示例
 
-const prev = 'http://localhost:5555';
+// const prev = 'http://localhost:5555';
+const prev = 'http://47.106.220.143';
 //登陆鉴权
 export const login = ({ username, password }) => ajax(`${prev}/login`, { username, password });
 
