@@ -16,14 +16,14 @@
 
 #development
 
-初次下载使用 推荐使用npm下载
+初次下载使用 推荐使用 npm 下载
 
 服务器已经部署到阿里云,我们只需要专注开发即可
 
-然后全局安装 nodemon  使用:
+然后全局安装 nodemon 使用:
 
 ```
-npm i nodemon -g 
+npm i nodemon -g
 
 ```
 
@@ -137,3 +137,11 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 2.根据原型图开发，分组分模块
 
 3.技术栈的学习,核心点的理解
+
+#### 接口文档
+
+restful 接口 返回`{code:0 或 1,data:xxx}`
+
+code 为 0 即成功，1 即为失败
+
+data 是返回的说明
