@@ -14,6 +14,20 @@
 
 #### 由于开源项目开发，需要购买服务器等，也需要资金成本，耗费成员精力，如果你想资助我们，可以在最下方扫码支付
 
+#### 所有项目说明文档在 document 文件夹内
+
+#### 产品原型策划人员
+
+<p><a href="https://github.com/listnameY"><img width="120" src="https://avatars0.githubusercontent.com/u/46550541?s=460&v=4"></a>
+
+<a href="https://github.com/myselfyyl"><img  width="120" src="https://avatars2.githubusercontent.com/u/9248222?s=460&v=4"></a>
+
+<a href="https://github.com/susuie"><img  width="120" src="https://avatars0.githubusercontent.com/u/32892344?s=460&v=4"></a></p>
+
+#### 视频资源提供人员
+
+<p><a href="https://github.com/xingkongv"><img width="120" src="https://avatars2.githubusercontent.com/u/39561396?s=460&v=4"></a></p>
+
 # 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
@@ -149,10 +163,9 @@ data 是返回的说明
 #### 文件结构
 
 ```
-+ app
-  + config            // webpack配置文件夹
-  + image             // gitHub的图片存储文件夹
-  - package.json      // 项目依赖说明文件夹
++ config            // webpack配置文件夹
++ image             // gitHub的图片存储文件夹
+- package.json      // 项目依赖说明文件夹
 + .babelrc            // babel的配置文件
 + .eslintrc.js        // eslint的配置文件
 + .prettierrc         // .prettier的配置文件
@@ -166,7 +179,7 @@ data 是返回的说明
       + Dva-model     // dva的model文件夹
       + ErrorBoundary // React错误边缘
       + Login         // 登陆的组件
-      + Video         // 短视频组件  
+      + Video         // 短视频组件
       + globalstyle   // 全局的样式文件
       + IM            // IM模块文件
       + App.jsx       // 根组件文件
@@ -187,4 +200,4 @@ data 是返回的说明
 
 赞助我们 请扫码，谢谢
 
-![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/WechatIMG5.jpeg)
+<img  width = "150"  src="https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/WechatIMG5.jpeg">
