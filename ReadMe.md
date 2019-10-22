@@ -102,7 +102,7 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 
 #### 整体技术架构
 
-![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
+
 
 #### 项目后期需要的环境
 
