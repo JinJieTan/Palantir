@@ -7,21 +7,21 @@ import Video from './Video/index';
 import './globalstyle/index.css';
 class App extends React.PureComponent {
   componentDidMount() {
-  
-    const ws = new WebSocket('ws://localhost:8080');
-    ws.onopen = function() {
-      ws.send('123');
-      console.log('open');
-    };
-    ws.onmessage = function() {
-      console.log('onmessage');
-    };
-    ws.onerror = function() {
-      console.log('onerror');
-    };
-    ws.onclose = function() {
-      console.log('onclose');
-    };
+    //云端部署 后期加入
+    // const ws = new WebSocket('ws://localhost:8080');
+    // ws.onopen = function() {
+    //   ws.send('123');
+    //   console.log('open');
+    // };
+    // ws.onmessage = function() {
+    //   console.log('onmessage');
+    // };
+    // ws.onerror = function() {
+    //   console.log('onerror');
+    // };
+    // ws.onclose = function() {
+    //   console.log('onclose');
+    // };
   }
   render() {
     return (
