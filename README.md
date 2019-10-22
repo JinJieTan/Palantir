@@ -1,4 +1,4 @@
-### 背景
+#背景
 
 一个兴趣驱动的技术项目, 皆在打造一个桌面端的跨平台项目，涉及音视频，IM（即时通讯）方面, 与商业无关。
 
@@ -18,17 +18,22 @@
 
 #### 产品原型策划人员
 
-[![listnameY](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/listnameY.png)](https://github.com/listnameY) [![myselfyyl](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/myselfyyl.png)](https://github.com/myselfyyl) [![susuie](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/susuie.png)](https://github.com/susuie)
+<p>
+<span><a href="https://github.com/listnameY"><img width="100" alt="listnameY" src="https://avatars0.githubusercontent.com/u/46550541?s=460&v=4"></a></span>
+
+<span><a href="https://github.com/myselfyyl"><img  width="100" alt="myselfyyl" src="https://avatars2.githubusercontent.com/u/9248222?s=460&v=4"></a></span>
+
+<span><a href="https://github.com/susuie"><img  width="100"  alt = "susuie" src="https://avatars0.githubusercontent.com/u/32892344?s=460&v=4"></a></p></span>
 
 #### 视频资源提供人员
 
-[![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/xingkongv.png)](https://github.com/xingkongv)
+<p><span><a href="https://github.com/xingkongv"><img width="120" alt="xingkongv" src="https://avatars2.githubusercontent.com/u/39561396?s=460&v=4"></a></span></p>
 
 # 整体技术架构
 
 ![image](https://github.com/JinJieTan/Desktop-TikTok/blob/master/image/Desktop-TikTok.jpeg)
 
-#### development
+#development
 
 初次下载使用 推荐使用 npm 下载
 
@@ -44,11 +49,15 @@ npm i nodemon -g
 然后
 
 ```
+
+
 npm i
+
 
 npm run dev
 
 npm start
+
 
 ```
 
@@ -58,7 +67,7 @@ npm start
 
 如果你下载依赖比较慢，我建议你使用`cnpm`（即使你设置了淘宝镜像）
 
-#### 涉及到的技术
+# 涉及到的技术
 
 1. `React`
 2. `Electron`
@@ -73,7 +82,7 @@ npm start
 
 > 短期暂不加入打包和 C++插件等功能，因为搭建那些环境比较复杂，一步一步来。
 
-#### 开发流程/分支规范
+#开发流程/分支规范
 
 开发者更新代码后，切换到`dev`分支。
 
@@ -86,7 +95,7 @@ npm start
 如果需要开发新功能， 请在此分枝上新建 feature 分支， 比如：
 
 ```
-git checkout -b feature/hello-world
+git checkout -branch feature/hello-world
 
 ```
 
@@ -96,7 +105,7 @@ feature 分支开发完成完成之后， 合并到自己的 `develop/name` 分�
 
 最所有代码合并在`dev`分支 `master`分支作为正式版本的分支。
 
-#### PR 规范
+#PR 规范
 
 提交 PR 的时候， 注意带一些简要的信息提示， 比如：
 
