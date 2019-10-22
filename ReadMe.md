@@ -18,7 +18,6 @@
 
 #### 产品原型策划人员
 
-<p>
 <span><a href="https://github.com/listnameY"><img width="100" alt="listnameY" src="https://avatars0.githubusercontent.com/u/46550541?s=460&v=4"></a></span>
 
 <span><a href="https://github.com/myselfyyl"><img  width="100" alt="myselfyyl" src="https://avatars2.githubusercontent.com/u/9248222?s=460&v=4"></a></span>
@@ -27,7 +26,7 @@
 
 #### 视频资源提供人员
 
-<p><span><a href="https://github.com/xingkongv"><img width="120" alt="xingkongv" src="https://avatars2.githubusercontent.com/u/39561396?s=460&v=4"></a></span></p>
+<span><a href="https://github.com/xingkongv"><img width="120" alt="xingkongv" src="https://avatars2.githubusercontent.com/u/39561396?s=460&v=4"></a></span>
 
 # 整体技术架构
 
