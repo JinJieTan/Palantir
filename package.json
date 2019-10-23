@@ -5,7 +5,8 @@
   "author": "Peter 谭金杰",
   "license": "MIT",
   "scripts": {
-    "start": "electron ./src/main/main.js",
+    "start": "nodemon --watch ./src/main/main.js  --exec npm run start-hot ",
+    "start-hot": "electron ./src/main/main.js",
     "dev": "webpack-dev-server --config ./config/webpack.dev.js",
     "start-hot-server": "nodemon ./server/index.js"
   },
