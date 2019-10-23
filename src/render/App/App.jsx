@@ -33,9 +33,9 @@ class App extends React.PureComponent {
       <HashRouter>
         <ErrorBoundary>
           {/* <Login /> */}
-          <div style={{ WebkitAppRegion: 'drag' }} className="navigation">
+          {/* <div style={{ WebkitAppRegion: 'drag' }} className="navigation">
             <div className="exit" style={{ width: 20, height: 20 }} onClick={this.exit}></div>
-          </div>
+          </div> */}
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/home" component={Home} />

@@ -1,10 +1,36 @@
 import React from 'react';
 import { ipcRenderer } from 'electron';
 import { clearSession } from '../../utills/API/index';
+import './index.less'
+
 export default class App extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgSrc: require('../assets/image/4.jpeg'),
+    };
+  }
   render() {
+    const { imgSrc } = this.state;
     return (
       <div>
+        <div className="headerClass">
+          <img src={ imgSrc }/>
+          <label htmlFor="text" >
+            Palantir
+          </label>
+          <button>{'<'}</button>
+          <button>{'>'}</button>
+          <button>首页</button>
+          <button>直播</button>
+          <input placeHolder="search" />
+            <img src={ '#' } />
+            <label>用户名</label>
+          <button>点我投稿</button>
+          <div className="btnGroup">
+          </div>
+          
+        </div>
         <h1>Home</h1>
         <button
           onClick={async () => {
