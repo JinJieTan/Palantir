@@ -8,6 +8,7 @@ class App extends React.PureComponent {
     isShowAnimation: true,
     name: 1,
     isShowLogin: false,
+    imgSrc:require('../assets/image/4.jpeg'),
   };
   componentDidMount() {
     this.timer = setInterval(() => {
@@ -25,7 +26,6 @@ class App extends React.PureComponent {
 
   handleLogin = async () => {
     //点击发送此时应该鉴权 已经保存在内存中 通过this.username 和 this.password 获取～
-
     const result = await login({ username: this.username, password: sha1(this.password) });
     if (result.code === 0 || result.code === 1) {
       this.username = '';
@@ -50,7 +50,7 @@ class App extends React.PureComponent {
   };
 
   render() {
-    const { isShowAnimation, name, isShowLogin } = this.state;
+    const { isShowAnimation, name, isShowLogin ,imgSrc } = this.state;
     return isShowAnimation ? (
       <div className={('login-animation', `animation${name}`)}></div>
     ) : !isShowLogin ? (
@@ -69,23 +69,40 @@ class App extends React.PureComponent {
         }}
       ></div>
     ) : (
-      <div className="login-container">
-        <div className="login-content">
-          <div>
-            <label htmlFor="text">账号:</label>
-            <input type="text" onChange={this.handleChange.bind(this, 'username')} />
+          <div className="login-container">
+            <div className="login-content">
+              <div>
+                <label htmlFor="text" className="login-title" >Palantir</label>
+              </div>
+              <div>
+                <img src={imgSrc} />
+              </div>
+              <div>
+                {/* <label htmlFor="text">账号:</label> */}
+                <input type="text" placeholder='请输入账号' onChange={this.handleChange.bind(this, 'username')} />
+              </div>
+              <div>
+                {/* <label htmlFor="text">密码:</label> */}
+                <input type="password" placeholder='请输入密码' onChange={this.handleChange.bind(this, 'password')} />
+              </div>
+              <div>
+                <label>
+                  <input type='radio' name='1' />
+                  <span>记住密码</span>
+                </label>
+                <label>
+                  <input type='radio' name='1' />
+                  <span>自动登录</span>
+                </label>
+              </div>
+              <button className="login-button" onClick={this.handleLogin}>
+                登陆
+              </button>
+              <button className="login-button">自动注册</button>
+              <a href='javascript:void(0)'>忘记密码</a>
+            </div>
           </div>
-          <div>
-            <label htmlFor="text">密码:</label>
-            <input type="password" onChange={this.handleChange.bind(this, 'password')} />
-          </div>
-          <button className="login-button" onClick={this.handleLogin}>
-            登陆
-          </button>
-          <button className="login-button">自动注册</button>
-        </div>
-      </div>
-    );
+        );
   }
 }
 
