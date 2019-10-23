@@ -1,3 +1,13 @@
+@themeBg:#f9a1a1;
+@pleaceholderColor:#ccc;
+
+//背景透明
+.transparent {
+  background-color: transparent;
+}
+.middle {
+  vertical-align: middle;
+}
 .login-container {
   width: 100%;
   height: 100%;
@@ -6,10 +16,11 @@
   // background-image: url('../assets/image/11.gif');;
   // background-repeat: no-repeat;
   // background-size: 100% 100%;
-  background-color: #f0f0f0;
+  //background-color: #f0f0f0;
+  background: @themeBg;
   .login-content {
-    width: 300px;
-    height: 200px;
+    width:400px;
+    height: 100%;
     position: absolute;
     left: 0;
     right: 0;
@@ -18,11 +29,97 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    //justify-content: space-around;
     align-items: center;
+    //background: rgb(223, 133, 133);
+    background: @themeBg;
+      >div {
+        min-height: 30px;
+          &:nth-of-type(1){
+            margin-top: 100px;
+          }
+          &:nth-of-type(2){
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+              img {
+                width: 100%;
+                height: inherit;
+              }
+          }
+          &:nth-of-type(5){
+            margin-top: 10px;
+            label {
+              font-size: 12px;
+              .middle;
+              display: inline-block;
+              height: 25px;
+              line-height:25px;
+              input[type="radio"] + span::before{
+                content: ""; 
+                display: inline-block;
+                .middle;
+                font-size: 18px;
+                width: 24px;
+                height: 20px;
+                background: #fff;
+                margin: 0 5px;
+              }
+              input[type="radio"]:checked + span::before {
+                background-color: #0078D7;
+              }
+              input[type="radio"] {
+                position: absolute;
+                clip: rect(0, 0, 0, 0);
+              }
+            }
+          }
+      }
   }
   .login-button {
-    width: 100px;
+    width: 160px; 
+      &:nth-of-type(1){
+        background: #fff;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      &:nth-of-type(2){
+        .transparent;
+        color: #0078D7;
+        margin-bottom: 5px;
+      }
+  }
+  .login-title {
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .project-name {
+    font-size: 24px;
+  }
+  input {
+    border: none;
+    .transparent;
+    text-align: center;
+    padding: 5px 0;
+    outline:none;
+    border-bottom: 1px solid #fff;
+      &:-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+        color: @pleaceholderColor;
+      }
+  }
+  button {
+    border: none;
+    outline: none;
+      &:hover{
+        cursor: pointer;
+      }
+  }
+  a {
+    font-size: 12px;
+    color: #6587FF;
   }
 }
 .animation1 {
