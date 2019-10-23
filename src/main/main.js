@@ -6,7 +6,7 @@ let mainWindow;
 app.disableHardwareAcceleration();
 
 ipcMain.on('Enter-Home', (event, arg) => {
-  mainWindow.quit();
+  mainWindow.close();
   createWindow(arg.width, arg.height);
 });
 
