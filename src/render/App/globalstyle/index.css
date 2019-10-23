@@ -353,3 +353,9 @@
     overflow: hidden;
   }
  
+  .exit{
+    background-image: url('../assets//image/exit.jpeg');
+    background-size: 70% 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
