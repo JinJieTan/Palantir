@@ -2,17 +2,23 @@ const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron');
 const path = require('path');
 const port = require('../../global.config');
 let mainWindow;
+
 app.disableHardwareAcceleration();
-// ipcMain.on('sync-message', (event, arg) => {
-//   console.log("sync - message")
-//   // event.returnValue('message', 'tanjinjie hello')
-// })
-function createWindow() {
+
+ipcMain.on('Enter-Home', (event, arg) => {
+  mainWindow.close();
+  createWindow(arg.width, arg.height);
+});
+
+ipcMain.on('close-window', () => {
+  app.quit();
+});
+function createWindow(width, height, event) {
   // Create the browser window.
 
   mainWindow = new BrowserWindow({
-    width: 805,
-    height: 500,
+    width,
+    height,
     webPreferences: {
       nodeIntegration: true,
     },
@@ -36,15 +42,16 @@ function createWindow() {
       mainWindow.hide();
     }
   });
-  mainWindow.loadURL(`http://localhost:${port}`);
+  mainWindow.loadURL(`http://localhost:${port}/index.html`);
 
   mainWindow.on('closed', function() {
-    mainWindow = null;
-    BrowserWindow.removeDevToolsExtension(path.join(__dirname, './src/extensions/react-dev-tool'));
+    // mainWindow = null;
   });
 }
 
-app.on('ready', createWindow);
+app.on('ready', () => {
+  createWindow(342, 417);
+});
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
@@ -52,5 +59,9 @@ app.on('window-all-closed', function() {
 });
 
 app.on('activate', function() {
-  if (mainWindow === null) createWindow();
+  if (mainWindow === null) {
+    () => {
+      createWindow(342, 417);
+    };
+  }
 });
