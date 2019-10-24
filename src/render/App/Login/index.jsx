@@ -54,7 +54,7 @@ class App extends React.PureComponent {
               Palantir
             </label>
           </div>
-          <div>
+          <div class="imgCon">
             <img src={imgSrc} />
           </div>
           <div>
@@ -67,11 +67,11 @@ class App extends React.PureComponent {
           </div>
           <div>
             <label>
-              <input type="radio" name="1" />
+              <input type="checkbox" name="1" />
               <span>记住密码</span>
             </label>
             <label>
-              <input type="radio" name="1" />
+              <input type="checkbox" name="1" />
               <span>自动登录</span>
             </label>
           </div>
