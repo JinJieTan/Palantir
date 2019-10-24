@@ -6,7 +6,7 @@ let mainWindow;
 app.disableHardwareAcceleration();
 
 ipcMain.on('Enter-Home', (event, arg) => {
-  mainWindow.close();
+  mainWindow.close()
   createWindow(arg.width, arg.height);
 });
 
@@ -22,7 +22,7 @@ function createWindow(width, height, event) {
     webPreferences: {
       nodeIntegration: true,
     },
-    frame: false,
+    frame: true,
   });
 
   //自定义放大缩小托盘功能
