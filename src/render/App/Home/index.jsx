@@ -13,7 +13,7 @@ export default class App extends React.PureComponent {
   render() {
     const { imgSrc } = this.state;
     return (
-      <div>
+      <div className="Main">
         <div className="headerClass">
           <img src={ imgSrc }/>
           <label htmlFor="text" >
@@ -31,7 +31,10 @@ export default class App extends React.PureComponent {
           </div>
           
         </div>
-        <h1>Home</h1>
+        <div className="container">
+          <nav></nav>
+          <main>
+          <h1>Home</h1>
         <button
           onClick={async () => {
             const isNoPassword = window.confirm('是否选择退出免密码登陆？');
@@ -46,6 +49,12 @@ export default class App extends React.PureComponent {
         >
           返回登陆
         </button>
+          </main>
+        </div>
+        <footer>
+          底部
+        </footer>
+       
       </div>
     );
   }
