@@ -50,7 +50,7 @@ function createWindow(width, height, event) {
 }
 
 app.on('ready', () => {
-  createWindow(342, 417);
+  createWindow(400, 460);
 });
 
 // Quit when all windows are closed.
