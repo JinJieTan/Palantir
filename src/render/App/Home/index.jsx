@@ -10,13 +10,21 @@ export default class App extends React.PureComponent {
     super(props);
     this.state = {
       imgSrc: require('../assets/image/4.jpeg'),
+      starsImg: require('../assets/image/Stars.png')
     };
   }
   render() {
     return (
       <div className="Main">
         <div className="container">
-          <nav></nav>
+          <nav>
+            <ul>
+              <li >
+                <img src={ this.state.starsImg } className="stars"/>
+                首页
+              </li>
+            </ul>
+          </nav>
           <main>
           <h1>Home</h1>
         <button
