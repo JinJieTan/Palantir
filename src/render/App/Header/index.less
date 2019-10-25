@@ -1,0 +1,124 @@
+.headerClass {
+  display: flex;
+  flex-wrap: wrap;
+  // position: fixed;
+  left: 3px;
+  top: 6px;
+  min-width: 1200px;
+  height: 67px;
+  line-height: 20px;
+  background-color: rgba(102, 102, 102, 1);
+  text-align: center;
+  img {
+    &:nth-of-type(1) {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      position: relative;
+      left: 9px;
+      top: 8px;
+      width: 55px;
+      height: 48px;
+    }
+    &:nth-of-type(2) {
+      position: relative;
+      left: 90px;
+      top: 20px;
+      width: 39px;
+      height: 30px;
+      border-radius: 100px;
+    }
+  }
+  label {
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+
+    &:nth-of-type(1) {
+      left: 20px;
+      top: 22px;
+      width: 103px;
+      height: 42px;
+      font-size: 28px;
+      text-align: left;
+      font-family: SourceHanSansSC-regular;
+    }
+    &:nth-of-type(2) {
+      left: 95px;
+      top: 22px;
+      width: 80px;
+      height: 20px;
+      font-size: 14px;
+      text-align: left;
+      font-family: Roboto-regular;
+    }
+  }
+
+  button{
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    height: 29px;
+    top: 20px;
+    color: rgba(16, 16, 16, 1);
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    &:nth-of-type(1) {
+      left: 30px;
+      width: 29px;
+    }
+    &:nth-of-type(2) {
+      width: 29px;
+      left: 35px;
+    }
+    &:nth-of-type(3) {
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      left: 40px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+      font-family: Roboto-regular;
+    }
+    &:nth-of-type(4) {
+      border: none;
+      background: rgba(255, 255, 255, 0);
+      left: 40px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+    }
+    &:nth-of-type(5) {
+      position: relative;
+      left: 115px;
+      width: 131px;
+      font-size: 14px;
+      text-align: center;
+      font-family: PingFang SC;
+      border: 1px solid rgba(187, 187, 187, 1);
+    }
+  }
+
+  input:nth-of-type(1) {
+    position: relative;
+    left: 50px;
+    top: 18px;
+    width: 253px;
+    height: 29px;
+    line-height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+
+  .btnGroup {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      position: relative;
+      border: none;
+      background: rgba(255, 255, 255, 0);
+      left: 130px;
+      top: 20px;
+      width: 31px;
+      border: 1px solid rgba(187, 187, 187, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
