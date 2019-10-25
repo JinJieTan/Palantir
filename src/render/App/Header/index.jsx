@@ -19,7 +19,7 @@ export default class Header extends React.PureComponent {
 				<button>{'<'}</button>
 				<button>{'>'}</button>
 				<button onClick={()=>this.props.history.push(`/home`)}>首页</button>
-				<button onClick={()=>this.props.history.push(`/live`)}>直播</button>
+				<button onClick={()=>this.props.history.push(`/home/live`)}>直播</button>
 				<input placeHolder="search" />
 				<img src={ '#' } />
 				<label>用户名</label>

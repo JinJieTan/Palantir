@@ -2,6 +2,8 @@ import React from 'react';
 import { ipcRenderer } from 'electron';
 import { clearSession } from '../../utills/API/index';
 import './index.less'
+import Header from '../Header';
+import ErrorBoundary from '../ErrorBoundary';
 
 export default class App extends React.PureComponent {
   constructor(props) {

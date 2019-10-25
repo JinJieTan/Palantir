@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.less'
+import Header from '../Header';
+import ErrorBoundary from '../ErrorBoundary';
 
 export default class Live extends React.Component {
   constructor(props){
