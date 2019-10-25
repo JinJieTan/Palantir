@@ -5,7 +5,9 @@ import { ipcRenderer } from 'electron';
 import ErrorBoundary from './ErrorBoundary/';
 import Login from './Login/index';
 import Home from './Home/index';
+import Header from './Header/index'
 import './globalstyle/index.css';
+import Live from "./Live/index";
 class App extends React.PureComponent {
   componentDidMount() {
     //云端部署 后期加入
@@ -36,9 +38,11 @@ class App extends React.PureComponent {
           {/* <div style={{ WebkitAppRegion: 'drag' }} className="navigation">
             <div className="exit" style={{ width: 20, height: 20 }} onClick={this.exit}></div>
           </div> */}
+          <Header {...this.props}/>
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/home" component={Home} />
+            <Route path="/live" component={Live} />
             <Route path="/" component={Login} />
           </Switch>
         </ErrorBoundary>
