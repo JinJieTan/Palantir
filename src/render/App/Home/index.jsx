@@ -2,6 +2,8 @@ import React from 'react';
 import { ipcRenderer } from 'electron';
 import { clearSession } from '../../utills/API/index';
 import './index.less'
+import Header from '../Header';
+import ErrorBoundary from '../ErrorBoundary';
 
 export default class App extends React.PureComponent {
   constructor(props) {
@@ -11,26 +13,8 @@ export default class App extends React.PureComponent {
     };
   }
   render() {
-    const { imgSrc } = this.state;
     return (
       <div className="Main">
-        <div className="headerClass">
-          <img src={ imgSrc }/>
-          <label htmlFor="text" >
-            Palantir
-          </label>
-          <button>{'<'}</button>
-          <button>{'>'}</button>
-          <button>首页</button>
-          <button>直播</button>
-          <input placeHolder="search" />
-            <img src={ '#' } />
-            <label>用户名</label>
-          <button>点我投稿</button>
-          <div className="btnGroup">
-          </div>
-          
-        </div>
         <div className="container">
           <nav></nav>
           <main>
@@ -54,7 +38,7 @@ export default class App extends React.PureComponent {
         <footer>
           底部
         </footer>
-       
+
       </div>
     );
   }

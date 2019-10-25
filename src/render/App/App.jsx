@@ -4,8 +4,10 @@ import { connect } from 'dva';
 import { ipcRenderer } from 'electron';
 import ErrorBoundary from './ErrorBoundary/';
 import Login from './Login/index';
-import Home from './Home/index';
+import HomeRoute from './Home/route';
+import Header from './Header/index'
 import './globalstyle/index.css';
+import Live from "./Live/index";
 class App extends React.PureComponent {
   componentDidMount() {
     //云端部署 后期加入
@@ -38,7 +40,7 @@ class App extends React.PureComponent {
           </div> */}
           <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/home" component={Home} />
+            <Route path="/home" component={HomeRoute} />
             <Route path="/" component={Login} />
           </Switch>
         </ErrorBoundary>
