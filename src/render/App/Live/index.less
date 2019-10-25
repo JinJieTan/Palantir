@@ -1,22 +1,152 @@
-#Live{
-  padding: 0 20px;
-  .liveContent{
-    width: 75%;
-    height: 500px;
-    text-align: center;
-    position: relative;
-    background: #e3e3e3;
-    button{
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      background-color: white;
-      height: 50px;
-      width: 150px;
-      border-radius: 5px;
-      outline: none;
+.live-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .live-content {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        width: 1440px;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        .alive {
+            width: 1125px;
+            height: 522px;
+            background: #e8e8e8;
+            float: left;
+            position: relative;
+            &:hover .live-mask{
+                opacity: 1;
+                transition: all .2s;
+            }
+            .live-mask {
+                position: absolute;
+                width: 156px;
+                height: 42px;
+                background: #fff;
+                text-align: center;
+                line-height: 42px;
+                font-size: 14px;
+                color: #101010;
+                left: 50%;
+                top: 50%;
+                margin: -21px 0 0 -78px;
+                opacity: 0;
+                transition: all .2s;
+                cursor: pointer;
+            }
+        }
+        .othen-live {
+            width: 250px;
+            height: 522px;
+            padding: 9px 14px;
+            border: 1px solid #e8e8e8;
+            border-radius: 5px;
+            box-sizing: border-box;
+            float: right;
+            li {
+                list-style: none;
+                width: 100%;
+                height: 92px;
+                background: #e8e8e8;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+        }
+        .live-classify {
+            width: 100%;
+            height: 92px;
+            padding: 15px 0;
+            clear: both;
+            li {
+                list-style: none;
+                width: 152px;
+                height: 92px;
+                background: #e8e8e8;
+                margin-right: 10px;
+                float: left;
+                &:last-of-type {
+                    width: 250px;
+                    height: 92px;
+                    border: 1px solid #e8e8e8;
+                    box-sizing: border-box;
+                    margin: 0 0 0 5px;
+                    background: transparent;
+                    line-height: 92px;
+                    text-align: center;
+                }
+            }
+        }
     }
-    .list{
+    .live-hot-recommend {
+        width: 1440px;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .live-hot-recommend-list {
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            overflow: hidden;
+            li {
+                width: 259px;
+                list-style: none;
+                float: left;
+                margin-right: 23px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                .img {
+                    width: 100%;
+                    height: 127px;
+                    background: #e8e8e8;
+                }
+                .live-hot-recommend-info {
+                    margin-top: 10px;
+                    .avatar {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background: #e8e8e8;
+                        float: left;
+                        vertical-align: middle;
+                    }
+                    .live-info {
+                        float: left;
+                        margin-left: 15px;
+                        p {
+                            margin-top: 10px;
+                            font-size: 18px;
+                            &.author {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .live-desc {
+                        float: right;
+                        .subscribe-state {
+                            width: 73px;
+                            height: 2epx;
+                            font-size: 14px;
+                            border: 1px solid rgb(187, 187, 187);
+                            color: #101010;
+                            border-radius: 4px;
+                            text-align: center;
+                            line-height: 25px;
+                            margin: 5px 0;
+                            cursor: pointer;
+                        }
+                        .watcing-num {
+                            font-size: 14px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
