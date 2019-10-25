@@ -24,7 +24,7 @@ class App extends React.PureComponent {
     if (result.code === 0 || result.code === 1) {
       alert(result.data);
       localStorage.setItem('username', this.username);
-      ipcRenderer.send('Enter-Home', { width: 800, height: 600 });
+      ipcRenderer.send('Enter-Home', { width: 1200, height: 750 });
       this.username = '';
       this.password = '';
     } else {
