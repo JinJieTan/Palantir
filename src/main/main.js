@@ -6,7 +6,7 @@ let mainWindow;
 app.disableHardwareAcceleration();
 
 ipcMain.on('Enter-Home', (event, arg) => {
-  mainWindow.close()
+  mainWindow.close();
   createWindow(arg.width, arg.height);
 });
 
@@ -21,27 +21,11 @@ function createWindow(width, height, event) {
     height,
     webPreferences: {
       nodeIntegration: true,
+      webSecurity: false,
     },
     frame: true,
   });
 
-  //自定义放大缩小托盘功能
-  ipcMain.on('changeWindow', (event, arg) => {
-    if (arg === 'min') {
-      console.log('min');
-      mainWindow.minimize();
-    } else if (arg === 'max') {
-      console.log('max');
-      if (mainWindow.isMaximized()) {
-        mainWindow.unmaximize();
-      } else {
-        mainWindow.maximize();
-      }
-    } else if (arg === 'hide') {
-      console.log('hide');
-      mainWindow.hide();
-    }
-  });
   mainWindow.loadURL(`http://localhost:${port}/index.html`);
 
   mainWindow.on('closed', function() {
