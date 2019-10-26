@@ -1,8 +1,70 @@
+@height: 80px;
+
 .live-container {
     width: 100%;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+  .live-nav {
+    position: relative;
+    padding: 5px 8px;
+    width: 100%;
+    height: @height;
+    background: #B0B0B0;
+    overflow-y: hidden;
+    .title_box {
+      padding-top: 5px;
+      width: 265px;
+      height: 100%;
+      font-size: 12px;
+      .title {
+        margin: 0;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 14px;
+      }
+      .date {
+        & > span:first-child {
+          margin-right: 10px;
+        }
+      }
+      .work {
+        span:nth-child(2) {
+          margin-left: 10px;
+        }
+        .prohibit_img {
+          margin-left: 10px;
+        }
+      }
+    }
+    .live-nav-user {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 452px;
+      height: @height;
+      .user-box{
+        margin-right: 80px;
+        display: inline-block;
+        .user{
+          font-size: 14px;
+        }
+        .addIcon{
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+      .lovely{
+        margin: 0;
+        height: @height;
+        line-height: @height + 15;
+        font-size: 28px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+  }
     .live-content {
         * {
             margin: 2px;
@@ -131,7 +193,7 @@
                         float: right;
                         .subscribe-state {
                             width: 73px;
-                            height: 2epx;
+                            height: 2px;
                             font-size: 14px;
                             border: 1px solid rgb(187, 187, 187);
                             color: #101010;
@@ -150,4 +212,4 @@
             }
         }
     }
-}
+  }
