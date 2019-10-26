@@ -1,0 +1,363 @@
+.login-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f0f0f0;
+}
+.login-container .login-content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.login-container .login-button {
+  width: 100px;
+}
+.animation1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/4.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.animation2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.animation3 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/5.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login-css {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/11.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.transparent {
+  background-color: transparent;
+}
+.middle {
+  vertical-align: middle;
+}
+.login-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #f9a1a1;
+}
+.login-container .login-content {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container .login-content > div {
+  min-height: 30px;
+}
+.login-container .login-content > div:nth-of-type(1) {
+  /* margin-top: 100px; */
+}
+.login-container .login-content > div:nth-of-type(2) {
+  margin: 20px auto;
+  max-width: 150px;
+  min-height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.login-container .login-content > div:nth-of-type(2) img {
+  width: 100%;
+  height: inherit;
+}
+.login-container .login-content > div:nth-of-type(5) {
+  margin-top: 10px;
+}
+.login-container .login-content > div:nth-of-type(5) label {
+  margin: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"] + span::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  width: 24px;
+  height: 20px;
+  background: #fff;
+  margin: 0 5px;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"]:checked + span::before {
+  background-color: #0078D7;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.login-container .login-button {
+  width: 160px;
+}
+.login-container .login-button:nth-of-type(1) {
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.login-container .login-button:nth-of-type(2) {
+  background-color: transparent;
+  color: #0078D7;
+  margin-bottom: 5px;
+}
+.login-container .login-title {
+  font-size: 36px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-container .project-name {
+  font-size: 24px;
+}
+.login-container input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 5px 0;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+.login-container input:-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+.login-container button {
+  border: none;
+  outline: none;
+}
+.login-container button:hover {
+  cursor: pointer;
+}
+.login-container a {
+  font-size: 12px;
+  color: #6587FF;
+}
+.animation1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/4.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.animation2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.animation3 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/5.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login-css {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/image/11.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url(../assets/image/bg.jpg) no-repeat 0px 0px;
+  background-size: 100% 100%;
+}
+.login-container .login-content {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+}
+.login-container .login-content > div {
+  min-height: 30px;
+}
+.login-container .login-content > div:nth-of-type(1) {
+  /* margin-top: 110px; */
+}
+.login-container .login-content > div:nth-of-type(2) {
+  margin: 20px auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.login-container .login-content > div:nth-of-type(2) img {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+}
+.login-container .login-content > div:nth-of-type(5) {
+  margin-top: 10px;
+}
+.login-container .login-content > div:nth-of-type(5) label {
+  margin: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"] + span::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  width: 24px;
+  height: 20px;
+  background: #fff;
+  margin: 0 5px;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"]:checked + span::before {
+  background-color: #0078D7;
+}
+.login-container .login-content > div:nth-of-type(5) label input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.login-container .login-content .tui-checkbox:checked {
+  background: #1673ff;
+}
+.login-container .login-content .tui-checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color ease 0.1s;
+  transition: background-color ease 0.1s;
+  cursor: pointer;
+}
+.login-container .login-content .tui-checkbox:checked::after {
+  content: '';
+  top: 2px;
+  left: 3px;
+  position: absolute;
+  background: transparent;
+  border: #fff solid 2px;
+  border-top: none;
+  border-right: none;
+  height: 6px;
+  width: 10px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.login-container .login-button {
+  width: 160px;
+}
+.login-container .login-button:nth-of-type(1) {
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: #483E57;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  line-height: 10px;
+  outline: none;
+  font-family: KaiTi;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.login-container .login-button:nth-of-type(1):hover {
+  background-color: #544157;
+}
+.login-container .login-button:nth-of-type(2) {
+  background-color: transparent;
+  color: #0078D7;
+  margin-bottom: 5px;
+}
+.login-container .login-title {
+  font-size: 36px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-container .project-name {
+  font-size: 24px;
+}
+.login-container input {
+  width: 110px;
+  padding: 0.5em 1em 0.5em 2.5em;
+  font-size: 18px;
+  outline: none;
+  background-size: 20px;
+  border: none;
+  font-weight: 100;
+  border-bottom: 0.5px solid #484856;
+}
+.login-container input:nth-of-type(1) {
+  background: url(../assets/image/adm.png) no-repeat 0px 7px;
+}
+.login-container input[type="password"] {
+  background: url(../assets/image/key.png) no-repeat 0px 12px;
+}
+.login-container button {
+  border: none;
+  outline: none;
+}
+.login-container button:hover {
+  cursor: pointer;
+}
+.login-container a {
+  font-size: 12px;
+  color: #6587FF;
+  color: crimson;
+  text-decoration: none;
+  cursor: pointer;
+}

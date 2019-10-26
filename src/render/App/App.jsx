@@ -1,9 +1,10 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'dva/router';
 import { connect } from 'dva';
+import { ipcRenderer } from 'electron';
 import ErrorBoundary from './ErrorBoundary/';
 import Login from './Login/index';
-import Video from './Video/index';
+import Home from './Home/route';
 import './globalstyle/index.css';
 class App extends React.PureComponent {
   componentDidMount() {
@@ -23,17 +24,21 @@ class App extends React.PureComponent {
     //   console.log('onclose');
     // };
   }
+
+  exit = () => {
+    ipcRenderer.send('close-window');
+  };
   render() {
     return (
       <HashRouter>
         <ErrorBoundary>
           {/* <Login /> */}
-          <div style={{ WebkitAppRegion: 'drag' }} className="navigation">
-            <span>拖动区域(---后面会加最小化菜单等)</span>
-          </div>
+          {/* <div style={{ WebkitAppRegion: 'drag' }} className="navigation">
+            <div className="exit" style={{ width: 20, height: 20 }} onClick={this.exit}></div>
+          </div> */}
           <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/video" component={Video} />
+            <Route path="/home" component={Home} />
             <Route path="/" component={Login} />
           </Switch>
         </ErrorBoundary>

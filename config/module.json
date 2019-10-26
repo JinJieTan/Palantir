@@ -1,0 +1,14 @@
+{
+    "home": {
+        "name": "Home",
+        "vendor": [
+            "react",
+            "react-dom",
+            "dva"
+        ]
+    },
+    "login": {
+        "name": "Login",
+        "vendor": "react"
+    }
+}

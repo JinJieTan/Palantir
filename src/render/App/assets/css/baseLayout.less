@@ -1,0 +1,89 @@
+.flex(){
+  flex:1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+}
+
+//申明flex布局
+.display_flex(){
+  display: flex;
+  display:-webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+}
+
+//申明flex横向布局
+.flex_row(@row_value:row){
+  .display_flex();
+  flex-direction: @row_value;
+  -webkit-flex-direction: @row_value;
+  -ms-flex-direction: @row_value;
+}
+
+//申明flex竖向布局
+.flex_column(@column_value:column){
+  @display_flex;
+  flex-direction: @column_value;
+  -webkit-flex-direction: @column_value;
+  -ms-flex-direction: @column_value;
+}
+
+//justify-content属性---主线方向的对齐方式
+.justify-content(@justify_value:center){
+  justify-content: @justify_value;
+  -webkit-justify-content: @justify_value;
+  -ms-flex-direction: @justify_value;
+}
+
+//align-items属性--垂直方向的对齐方式
+.align-items(@align_value:center){
+  align-items: @align_value;
+  -webkit-align-items: @align_value;
+  -ms-flex-align: @align_value;//TODO 待测试
+}
+
+//横向居中对齐
+.base_row_justify_center(){
+  .flex_row();
+  .justify-content()
+}
+
+//竖向居中对齐
+.base_column_justify_center(){
+  .flex_column();
+  .justify-content();
+}
+
+//竖向垂直居中对齐
+.base_column_align_center(){
+  .flex_column();
+  .align-items();
+}
+
+//横向垂直居中对齐
+.base_row_align_center (){
+  .flex_row();
+  .align-items();
+}
+
+//居中
+.base_center (){
+  .flex_row();
+  .justify-content();
+  .align-items();
+}
+
+
+.base_column_center(){
+  .flex_column();
+  .justify-content();
+  .align-items();
+}
+
+
+/*经常使用的标题对向展开*/
+.base_row_title_layout(){
+  .base_row_align_center();
+  .justify-content(space-between)
+}
