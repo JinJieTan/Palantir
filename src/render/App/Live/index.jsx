@@ -7,6 +7,31 @@ export default class Live extends PureComponent {
     render() {
         return (
             <div className="live-container">
+                <div className='live-nav'>
+                    <div className='title_box'>
+                        <p className='title'>视频标题</p>
+                        <p className='date'><span>2019-10-25</span><span>22:24</span></p>
+                        <p className='work'>
+                            <span>9999播放量</span>
+                            <span>666评论</span>
+                            <span className='prohibit_img'></span>
+                            <span>未经作者授权，禁止转载</span>
+                        </p>
+                    </div>
+                    <div className='live-nav-user'>
+                        <img src={ '#' } />
+                        <div className='user-box'>
+                            <p className='user'>用户名</p>
+                            <p className='addIcon'>
+
+                                <span>关注</span>
+                            </p>
+                        </div>
+
+                        <p className='lovely'>猜你喜欢</p>
+                    </div>
+
+                </div>
                 <div className="live-content">
                     <div className="alive">
                         <div className="live-mask">
