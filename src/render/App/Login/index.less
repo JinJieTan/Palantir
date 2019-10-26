@@ -1,62 +1,5 @@
-.login-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  // background-image: url('../assets/image/11.gif');;
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  background-color: #f0f0f0;
-  .login-content {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .login-button {
-    width: 100px;
-  }
-}
-.animation1 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/image/4.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.animation2 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/image/2.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.animation3 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/image/5.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 
-.login-css {
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/image/11.gif');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-@themeBg:#f9a1a1;
-@pleaceholderColor:#ccc;
-
+@themeBg: #f9a1a1;
 //背景透明
 .transparent {
   background-color: transparent;
@@ -64,122 +7,149 @@
 .middle {
   vertical-align: middle;
 }
+
+
 .login-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
-  // background-image: url('../assets/image/11.gif');;
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  //background-color: #f0f0f0;
-  background: @themeBg;
+  background-image: url('../assets/image/login_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  // background: @themeBg;
   .login-content {
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    //justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    //background: rgb(223, 133, 133);
-    background: @themeBg;
-      >div {
-        min-height: 30px;
-          &:nth-of-type(1){
-            margin-top: 100px;
-          }
-          &:nth-of-type(2){
-            margin: 20px auto;
-            max-width: 150px;
-            min-height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 10px;
-              img {
-                width: 100%;
-                height: inherit;
-              }
-          }
-          &:nth-of-type(5){
-            margin-top: 10px;
-            label {
-              margin: 5px;
-              font-size: 12px;
-              .middle;
-              display: inline-block;
-              height: 25px;
-              line-height:25px;
-              input[type="radio"] + span::before{
-                content: ""; 
-                display: inline-block;
-                .middle;
-                font-size: 12px;
-                width: 24px;
-                height: 20px;
-                background: #fff;
-                margin: 0 5px;
-              }
-              input[type="radio"]:checked + span::before {
-                background-color: #0078D7;
-              }
-              input[type="radio"] {
-                position: absolute;
-                clip: rect(0, 0, 0, 0);
-              }
-            }
-          }
+    width: 100vw;
+    height: 100%;
+    transform: translate(0, -5%);
+    .logo-container {
+      .login-title {
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+        background-image: linear-gradient(to right , #fc027d, #ffbf17, #7367c4);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
       }
+    }
+    .avatar-container {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+      margin: 20px 0;
+      .imgCon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: inherit;
+        }
+      }
+      i {
+        z-index: 100;
+        position: absolute;
+        right: 0px;
+        bottom: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #70ed3a;
+      }
+    }
+    .input-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 250px;
+      border-radius: .25rem;
+      // border: 1px solid #212425;
+      border: 1px solid #E0E0E0;
+      // background: #70ed3a;
+      margin-bottom: 10px;
+      input {
+        padding: 1rem;
+        text-align: left;
+        &::placeholder {
+          color: #85888a;
+        } 
+      }
+      span {
+        padding-right: 5px;
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          path {
+            color: #E0E0E0;
+          }
+        }
+      }
+    }
+    .nobody-container {
+      display: flex;
+      justify-content: space-between;
+      width: 230px;
+      margin-bottom: 30px;
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        height: 25px;
+        line-height: 25px;
+        input {
+          width: 16px;
+          height: 16px;
+          border: 1px solid #85888a;
+          margin-right: 5px;
+        }
+        span {
+          color: #3f536e
+        }
+      }
+    }
   }
   .login-button {
-    width: 160px; 
-      &:nth-of-type(1){
-        background: #fff;
-        padding: 10px 0;
-        border-radius: 5px;
-        margin: 10px 0;
-      }
-      &:nth-of-type(2){
-        .transparent;
-        color: #0078D7;
-        margin-bottom: 5px;
-      }
-  }
-  .login-title {
-    font-size: 36px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .project-name {
-    font-size: 24px;
+    width: 240px;
+    &:nth-of-type(1) {
+      background: #128fdc;
+      color: #fff;
+      padding: 10px 0;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    &:nth-of-type(2) {
+      .transparent;
+      color: #0078d7;
+      margin-bottom: 5px;
+    }
   }
   input {
     border: none;
     .transparent;
     text-align: center;
     padding: 5px 0;
-    outline:none;
-    border-bottom: 1px solid #fff;
-      &:-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
-        color: @pleaceholderColor;
-      }
+    outline: none;
   }
   button {
     border: none;
     outline: none;
-      &:hover{
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
+    }
   }
-  a {
-    font-size: 12px;
-    color: #6587FF;
-  }
+  // a {
+  //   font-size: 12px;
+  //   color: #6587ff;
+  // }
 }
+
 .animation1 {
   width: 100%;
   height: 100%;
