@@ -79,7 +79,7 @@
   min-height: 30px;
 }
 .login-container .login-content > div:nth-of-type(1) {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .login-container .login-content > div:nth-of-type(2) {
   margin: 20px auto;
@@ -216,7 +216,7 @@
   min-height: 30px;
 }
 .login-container .login-content > div:nth-of-type(1) {
-  margin-top: 110px;
+  /* margin-top: 110px; */
 }
 .login-container .login-content > div:nth-of-type(2) {
   margin: 20px auto;
