@@ -4,8 +4,8 @@
 
 .Main {
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
+  // height: 100%;
+  // overflow-y: hidden;
 }
 .container {
   display: flex;
@@ -13,25 +13,67 @@
     width: 20vw;
     min-width: 200px;
     justify-content:flex-start;
-    height: 936px;
-    line-height: 20px;
+    // height: 936px;
+    // line-height: 20px;
     background-color: rgba(230, 230, 230, 1);
     color: rgba(16, 16, 16, 1);
     font-size: 14px;
     // text-align: center;
     font-family: Roboto;
+    padding-left: 15px;
+    .classify{
+      width: 45px;
+      height: 45px;
+      background-color: black;
+      margin: 20px 0;
+    }
     ul{
       padding: 0;
       list-style: none;
+      li{
+       display: flex;
+       align-items: center;
+       margin: 34px 0;
+      }
       .stars{
         width: 29px;
         height: 29px;
+        margin-right: 13px;
       }
     }
   }
   main {
     width: 80vw;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: calc(100vh - 67px);
+    overflow: scroll;
+    .liveScan{
+      display: inline-block;
+      font-size: 18px;
+      width: 22%;
+      // overflow: hidden;
+      margin: 15px 0;
+      div{
+        display: flex;
+        font-size: 14px;
+      }
+      .scanImg{
+        width: 100%;
+        height: 151px;
+        background-color: black;
+      }
+      p{
+        margin: 0;
+      }
+      .icon{
+        width: 18px;
+        height: 18px;
+        background-color: black;
+      }
+    }
+    
   }
 }
 
