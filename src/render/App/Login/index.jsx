@@ -122,11 +122,11 @@ class App extends React.PureComponent {
           </div>
           <div className="nobody-container">
             <label>
-              <input type="checkbox" name="1" />
+              <input type="checkbox" name="1" class="tui-checkbox" />
               <span>记住密码</span>
             </label>
             <label>
-              <input type="checkbox" name="1" />
+              <input type="checkbox" name="1" class="tui-checkbox" />
               <span>自动登录</span>
             </label>
           </div>

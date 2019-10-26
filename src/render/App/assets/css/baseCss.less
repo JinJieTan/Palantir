@@ -1,0 +1,74 @@
+//关于字体颜色值的基本设定
+@big_title_color: rgba(0, 0, 0, .85); //大标题
+@little_title_color: rgba(0, 0, 0, .65); //小标题
+@content_color: rgba(0, 0, 0, .45); //文本的展示
+@disable_color: rgba(0, 0, 0, .25); //无法使用时
+@link_color: #1890FF;
+@line_color: #e8e8e8; //
+@border_font: 1px solid @line_color;
+@back_color:#F0F2F5;
+@disable1_color: rgba(0, 0, 0, 0.02);
+
+@link_color: #1890FF;
+@link_hover_color: #40a9ff;
+@line_color: #e8e8e8; //
+@border_font: 1px solid @line_color;
+@back_color:#F0F2F5;
+//关于字体大小的基本设定
+@maximum_font_size: 38px; //最大值
+@super_big_font_size: 30px;
+@super_font_size: 24px;
+@big_font_size: 20px;
+@head_font_size: 16px;
+@body_font_size: 14px;
+@caption_font_size: 12px;
+// 实心圆
+.dots(@width: 5px, @background: #000) {
+  display: inline-block;
+  width: @width;
+  height: @width;
+  border-radius: 50%;
+  background: @background;
+}
+
+// 框类型标题栏
+@padding: 0 24px;
+@background: linear-gradient(#F7F9FA, #E5EAF3);
+@inner_padding: 15px 24px 24px;
+
+// 一般头部样式
+.header(@height: 45px, @background: #fff) {
+  height: @height;
+  width: 100%;
+  line-height: @height;
+  background: @background;
+}
+
+.cutLine(@margin:40px 0,@color:rgba(0, 0, 0, .15)){
+  margin: @margin;
+  width: 100%;
+  border-bottom: 1px solid @color;
+  height: 0;
+}
+// 边框阴影
+@border_shadows: 0 2px 6px #C4C6C6;
+
+//底部阴影样式
+@bottom_shadow: 0 2px 5px 5px #888888;
+@box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+// 红色标注性文字
+.notes(@color: #e82532) {
+  color: @color;
+  font-weight: bold;
+}
+
+.boxShadow{
+  box-shadow: 2px 2px 4px #BCBCBC;
+  -webkit-box-shadow:2px 2px 4px #BCBCBC;
+}
+// 常用配色
+@light_blue: #1890ff; // 浅蓝色
+@deep_blue: #288ad6; // 深蓝
+@red: #f52222d; // 红色
+
+@import "baseLayout";
