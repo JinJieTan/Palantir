@@ -49,7 +49,7 @@ class App extends React.PureComponent {
     return (
       <div className="login-container">
         <div className="login-content">
-          <div>
+          <div className='login-name'>
             <label htmlFor="text" className="login-title">
               Palantir
             </label>
@@ -57,15 +57,15 @@ class App extends React.PureComponent {
           <div class="imgCon">
             <img src={imgSrc} />
           </div>
-          <div>
+          <div className='form-name'>
             {/* <label htmlFor="text">账号:</label> */}
             <input type="text" placeholder="请输入账号" onChange={this.handleChange.bind(this, 'username')} />
           </div>
-          <div>
+          <div className='form-password'>
             {/* <label htmlFor="text">密码:</label> */}
             <input type="password" placeholder="请输入密码" onChange={this.handleChange.bind(this, 'password')} />
           </div>
-          <div>
+          <div className='form-checkbox'>
             <label>
               <input type="checkbox" name="1" class="tui-checkbox" />
               <span>记住密码</span>
@@ -75,11 +75,16 @@ class App extends React.PureComponent {
               <span>自动登录</span>
             </label>
           </div>
-          <button className="login-button" onClick={this.handleLogin}>
-            登陆
-          </button>
-          <button className="login-button">自动注册</button>
-          <a href="javascript:void(0)">忘记密码</a>
+          <div className='form-login'>
+            <button className="login-button" onClick={this.handleLogin}>
+              登陆
+            </button>
+          </div>
+          {/* <button className="login-button">自动注册</button> */}
+          <div className='form-other'>
+            <a href="javascript:void(0)">自动注册</a>
+            <a href="javascript:void(0)">忘记密码</a>
+          </div>
         </div>
       </div>
     );
