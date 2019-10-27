@@ -22,7 +22,7 @@ export default class Header extends React.PureComponent {
 				<button onClick={()=>this.props.history.push(`/home/live`)}>直播</button>
 				<input placeHolder="search" />
 				<img src={ '#' } />
-				<label>用户名</label>
+				<label onClick={() => this.props.history.push(`/home/uc`)}>用户名</label>
 				<button>点我投稿</button>
 				<div className="btnGroup">
 				</div>

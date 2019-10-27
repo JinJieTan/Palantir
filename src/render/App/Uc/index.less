@@ -1,0 +1,122 @@
+@hover: #40a9ff;
+
+.uc-container {
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+    * {
+        color: #333;
+        transition: all .3s;
+    }
+    a {
+        text-decoration: none;
+        &:hover,
+        &.active {
+            text-decoration: none;
+            color: @hover;
+        }
+    }
+}
+
+.uc-info-container {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    padding: 30px 0;
+    .uc-info-avatar-container {
+        flex: 0 0 90px;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .uc-info-details {
+        display: flex;
+        min-height: 90px;
+        .uc-info-details-left {
+            margin-right: 10px;
+            .uc-info-name {
+                margin: 20px 0 5px;
+                color: #333;
+            }
+            .uc-info-signature {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        .uc-info-details-right {
+            display: flex;
+            align-items: center;
+            button {
+                width: 110px;
+                height: 40px;
+                border: 1px solid @hover;
+                background: none;
+                outline: none;
+                border-radius: 3px;
+                margin-left: 15px;
+                text-align: center;
+                cursor: pointer;
+                &[type="primary"] {
+                    color: #fff;
+                    background-color: #1890ff;
+                    border-color: #1890ff;
+                    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+                    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+                    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+                }
+                &:hover {
+                    background-color: @hover;
+                    border-color: @hover;
+                }
+            }
+        }
+    }
+}
+
+.uc-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f5f5f5;
+    li {
+        text-align: center;
+        .uc-nav-link {
+            position: relative;
+            padding: 0 5px;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0;
+                height: 2px;
+                background: @hover;
+                transition: all .3s;
+            }
+            &:hover,
+            &.active {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
