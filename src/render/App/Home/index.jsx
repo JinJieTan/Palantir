@@ -15,7 +15,8 @@ export default class App extends React.PureComponent {
       hotRecommendList: [1, 2, 3, 4],
       imgSrc: require('../assets/image/4.jpeg'),
       imgSrc1: require('../assets/image/home_sample.jpg'),
-      starsImg: require('../assets/image/Stars.png')
+      starsImg: require('../assets/image/Stars.png'),
+      listImage: require('../assets/image/manage.png')
     };
   }
   render() {
@@ -32,7 +33,7 @@ export default class App extends React.PureComponent {
 
           res.push(<div className="liveScan">
             <img src={imgSrc} className="scanImg"/>
-            <p>视频标题</p>
+            <p className='title'>视频标题</p>
             <div>
               <div className="">
                 <img src={imgSrc} className="icon"/>
@@ -53,7 +54,7 @@ export default class App extends React.PureComponent {
     return (
       <div className="container">
         <nav>
-            <img src={ this.state.starsImg } className="classify"/>
+            <img src={ this.state.listImage } className="classify"/>
             <ul>
               <li >
                 <img src={ this.state.starsImg } className="stars"/>
@@ -82,7 +83,7 @@ export default class App extends React.PureComponent {
           <div className="home-hot-recommend">
             <div className="home-content-header">
               <h3 className="title">热门推荐</h3>
-              <span className="more">更多>></span>
+              <span className="more">更多 >></span>
             </div>
             <div className="home-hot-recommend-content">
               <div className="home-hot-recommend-list">
