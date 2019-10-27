@@ -1,0 +1,24 @@
+@hover: #40a9ff;
+
+.sidemenu-container {
+    width: 100%;
+    padding-top: 20px;
+    li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+        border-right: 3px solid #fff;
+        &:hover,
+        &.active {
+            span {
+                color: @hover;
+            }
+        }
+        &:hover {
+            background-color: #e6f7ff;
+            border-right-color: #1890ff;
+
+        }
+    }
+}

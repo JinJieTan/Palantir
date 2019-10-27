@@ -1,0 +1,78 @@
+.moment-item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px 3px rgba(0,0,0,0.05);
+    &:hover {
+        box-shadow: 0 5px 15px 3px rgba(0,0,0,0.1);
+    }
+    .moment-item-left {
+        margin: 0 10px 0 0;
+        .moment-avatar-container {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .moment-item-right {
+        .moment-item-intro {
+            font-size: 14px;
+        }
+        .moment-video-container {
+            margin-bottom: 10px;
+            video {
+                outline: none;
+            }
+        }
+        .moment-operations {
+            display: flex;
+            justify-content: space-around;
+        }
+        .moment-operate {
+            flex: 0 0 25px;
+            width: 25px;
+            height: 25px;
+            border: 0;
+            background: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            outline: none;
+            margin: 0 5px;
+            &.collect {
+                background-image: url(../../assets/image/collect.png);
+                &:hover {
+                    background-image: url(../../assets/image/collect-active.png);
+                }
+            }
+            &.like {
+                background-image: url(../../assets/image/like.png);
+                &:hover {
+                    background-image: url(../../assets/image/like-active.png);
+                }
+            }
+            &.comment {
+                background-image: url(../../assets/image/comment.png);
+                &:hover {
+                    background-image: url(../../assets/image/comment-active.png);
+                }
+            }
+            &.download {
+                background-image: url(../../assets/image/download.png);
+                &:hover {
+                    background-image: url(../../assets/image/download-active.png);
+                }
+            }
+        }
+    }
+}
