@@ -1,0 +1,171 @@
+.headerClass {
+  display: flex;
+  flex-wrap: wrap;
+  left: 3px;
+  top: 6px;
+  min-width: 1200px;
+  height: 62px;
+  line-height: 20px;
+  background-color: #0082df;
+  text-align: center;
+}
+.headerClass img:nth-of-type(1) {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  left: 9px;
+  top: 8px;
+  width: 45px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.headerClass img:nth-of-type(2) {
+  position: relative;
+  left: 90px;
+  top: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.headerClass label {
+  position: relative;
+}
+.headerClass label:nth-of-type(1) {
+  left: 20px;
+  top: 22px;
+  width: 103px;
+  height: 42px;
+  font-size: 28px;
+  text-align: left;
+  color: #ffcf00;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-right: 10px;
+}
+.headerClass label:nth-of-type(2) {
+  left: 95px;
+  top: 22px;
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.headerClass button {
+  position: relative;
+  height: 29px;
+  top: 17px;
+  color: #101010;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+.headerClass button:nth-of-type(1) {
+  left: 30px;
+  width: 29px;
+  top: 18px;
+  background-color: #0F4F99;
+  opacity: 0.5;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  outline: none;
+  font-family: KaiTi;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.headerClass button:nth-of-type(1):hover {
+  background-color: #0E61AD;
+}
+.headerClass button:nth-of-type(2) {
+  width: 29px;
+  left: 35px;
+  top: 18px;
+  margin-right: 10px;
+  background-color: #0F4F99;
+  opacity: 0.5;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  outline: none;
+  font-family: KaiTi;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.headerClass button:nth-of-type(2):hover {
+  background-color: #0E61AD;
+}
+.headerClass button:nth-of-type(3) {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 40px;
+  color: #101010;
+  font-size: 20px;
+  font-family: Roboto-regular;
+  margin-right: 10px;
+}
+.headerClass button:nth-of-type(4) {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  left: 40px;
+  color: #101010;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.headerClass button:nth-of-type(5) {
+  position: relative;
+  left: 115px;
+  width: 131px;
+  font-size: 14px;
+  font-family: PingFang SC;
+  border: 1px solid #bbbbbb;
+  color: white;
+  background-color: #0F4F99;
+  opacity: 0.5;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  outline: none;
+  font-family: KaiTi;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.headerClass button:nth-of-type(5):hover {
+  background-color: #0E61AD;
+}
+.headerClass input:nth-of-type(1) {
+  position: relative;
+  left: 50px;
+  top: 16px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: #0F4F99;
+  opacity: 0.5;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  outline: none;
+  font-family: KaiTi;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+.headerClass .btnGroup {
+  display: flex;
+  justify-content: flex-end;
+}
+.headerClass .btnGroup button {
+  position: relative;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  left: 130px;
+  top: 20px;
+  width: 31px;
+  border: 1px solid #bbbbbb;
+  color: #ffffff;
+}
