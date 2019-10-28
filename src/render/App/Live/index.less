@@ -2,7 +2,8 @@
 
 .live-container {
     width: 100%;
-    height: 100%;
+    min-width: 1030px;
+    // height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
   .live-nav {
@@ -14,7 +15,7 @@
     overflow-y: hidden;
     .title_box {
       padding-top: 5px;
-      width: 265px;
+      width: 300px;
       height: 100%;
       font-size: 12px;
       .title {
@@ -34,6 +35,14 @@
         }
         .prohibit_img {
           margin-left: 10px;
+          margin-right: 3px;
+        }
+        img{
+          width: 14px;
+          height: 14px;
+          vertical-align: middle;
+          margin-right: 3px;
+          margin-bottom: 2px;
         }
       }
     }
@@ -43,13 +52,27 @@
       right: 0;
       width: 452px;
       height: @height;
+      display: flex;
+      align-items: center;
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
       .user-box{
+        text-align: center;
         margin-right: 80px;
         display: inline-block;
         .user{
-          font-size: 14px;
+          font-size: 16px;
+          margin-bottom: 5px;
         }
         .addIcon{
+          padding:4px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          cursor: pointer;
           span{
             font-size: 16px;
           }
@@ -71,10 +94,13 @@
             padding: 0;
         }
         width: 100%;
-        padding: 10px 25px;
+        padding: .5em;
         box-sizing: border-box;
-        .alive {
-            width: 75%;
+        .live-content-top{
+          overflow: hidden;
+          display: flex;
+          .alive {
+            flex: 3;
             height: 522px;
             background: #e8e8e8;
             float: left;
@@ -99,16 +125,21 @@
                 transition: all .2s;
                 cursor: pointer;
             }
-        }
-        .othen-live {
-            width: 250px;
+          }
+          .othen-live {
+            // width: 25%px;
+            margin:0;
+            padding:10px;
+            flex: 1;
+            min-width: 250px;
             height: 522px;
-            padding: 9px 14px;
+            padding: 9px 10px;
             border: 1px solid #e8e8e8;
             border-radius: 5px;
             box-sizing: border-box;
             float: right;
             li {
+               margin:0px;
                 list-style: none;
                 width: 100%;
                 height: 92px;
@@ -116,8 +147,11 @@
                 margin-bottom: 10px;
                 border-radius: 5px;
             }
+          }
         }
-        .live-classify {
+        
+        
+        .live-classify {live-nav-user
             width: 100%;
             height: 92px;
             padding: 15px 0;
@@ -134,7 +168,7 @@
                 &:last-of-type {
                     width: 250px;
                     height: 92px;
-                    border: 1px solid #e8e8e8;
+                    // border: 1px solid #e8e8e8;
                     box-sizing: border-box;
                     margin: 0 0 0 5px;
                     background: transparent;
@@ -142,11 +176,15 @@
                     text-align: center;
                 }
             }
+            a{
+              text-decoration: none;
+              color: #000;
+            }
         }
     }
     .live-hot-recommend {
         width: 100%;
-        padding: 10px 25px;
+        padding: .5em;
         box-sizing: border-box;
         * {
             margin: 0;
@@ -163,7 +201,7 @@
                 width: 100%;
                 list-style: none;
                 float: left;
-                margin-right: 23px;
+                margin-right: 15px;
                 &:last-of-type {
                     margin-right: 0;
                 }
@@ -175,17 +213,21 @@
                 .live-hot-recommend-info {
                     margin-top: 10px;
                     overflow: hidden;
+                    display: flex;
                     .avatar {
-                        width: 45px;
-                        height: 45px;
-                        border-radius: 50%;
-                        background: #e8e8e8;
-                        float: left;
+                        flex: 1;
+                        // float: left;
                         vertical-align: middle;
+                        img{
+                          width: 45px;
+                          height: 45px;
+                          border-radius: 50%;
+                        }
                     }
                     .live-info {
-                        float: left;
-                        margin-left: 15px;
+                        flex: 2;
+                        // float: left;
+                        padding-left: 5px;
                         p {
                             // margin-top: 10px;
                             font-size: 16px;
@@ -196,7 +238,8 @@
                         }
                     }
                     .live-desc {
-                        float: right;
+                         flex: 2;
+                        // float: right;
                         .subscribe-state {
                             width: 73px;
                             height: 22px;
