@@ -4,7 +4,15 @@ import {Link} from 'dva/router';
 import './index.less';
 
 export default class Live extends PureComponent {
+    constructor(props) {
+		super(props);
+		this.state = {
+            imgSrc: require('../assets/image/4.jpeg'),
+            banSrc:require('../assets/image/ban.png')
+		};
+	}
     render() {
+        const { imgSrc,banSrc } = this.state;
         return (
             <div className="live-container">
                 <div className='live-nav'>
@@ -15,36 +23,37 @@ export default class Live extends PureComponent {
                             <span>9999播放量</span>
                             <span>666评论</span>
                             <span className='prohibit_img'></span>
+                            <img src={ banSrc } alt=""/>
                             <span>未经作者授权，禁止转载</span>
                         </p>
                     </div>
                     <div className='live-nav-user'>
-                        <img src={ '#' } />
+                        <img src={ imgSrc } />
                         <div className='user-box'>
-                            <p className='user'>用户名</p>
-                            <p className='addIcon'>
-
+                            <div className='user'>用户名</div>
+                            <div className='addIcon'>
+                                <span>+</span>
                                 <span>关注</span>
-                            </p>
+                            </div>
                         </div>
-
                         <p className='lovely'>猜你喜欢</p>
                     </div>
-
                 </div>
                 <div className="live-content">
-                    <div className="alive">
-                        <div className="live-mask">
-                            点击进入直播间
+                    <div className="live-content-top">
+                        <div className="alive">
+                            <div className="live-mask">
+                                点击进入直播间
+                            </div>
                         </div>
+                        <ul className="othen-live">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
-                    <ul className="othen-live">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
                     <ul className="live-classify">
                         <li></li>
                         <li></li>
@@ -64,7 +73,9 @@ export default class Live extends PureComponent {
                         <li>
                             <div className="img"></div>
                             <div className="live-hot-recommend-info">
-                                <div className="avatar"></div>
+                                <div className="avatar">
+                                    <img src={ imgSrc } alt=""/>
+                                </div>
                                 <div className="live-info">
                                     <p className="title">直播标题</p>
                                     <p className="author">作者名字</p>
@@ -78,7 +89,9 @@ export default class Live extends PureComponent {
                         <li>
                             <div className="img"></div>
                             <div className="live-hot-recommend-info">
-                                <div className="avatar"></div>
+                                <div className="avatar">
+                                    <img src={ imgSrc } alt=""/>
+                                </div>
                                 <div className="live-info">
                                     <p className="title">直播标题</p>
                                     <p className="author">作者名字</p>
@@ -92,7 +105,9 @@ export default class Live extends PureComponent {
                         <li>
                             <div className="img"></div>
                             <div className="live-hot-recommend-info">
-                                <div className="avatar"></div>
+                                <div className="avatar">
+                                    <img src={ imgSrc } alt=""/>
+                                </div>
                                 <div className="live-info">
                                     <p className="title">直播标题</p>
                                     <p className="author">作者名字</p>
@@ -106,7 +121,9 @@ export default class Live extends PureComponent {
                         <li>
                             <div className="img"></div>
                             <div className="live-hot-recommend-info">
-                                <div className="avatar"></div>
+                                <div className="avatar">
+                                    <img src={ imgSrc } alt=""/>
+                                </div>
                                 <div className="live-info">
                                     <p className="title">直播标题</p>
                                     <p className="author">作者名字</p>
@@ -120,7 +137,9 @@ export default class Live extends PureComponent {
                         <li>
                             <div className="img"></div>
                             <div className="live-hot-recommend-info">
-                                <div className="avatar"></div>
+                                <div className="avatar">
+                                    <img src={ imgSrc } alt=""/>
+                                </div>
                                 <div className="live-info">
                                     <p className="title">直播标题</p>
                                     <p className="author">作者名字</p>

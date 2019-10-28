@@ -3,44 +3,48 @@
 .clear { clear:both;}
 
 .videolist-container {
-    padding: 20px 0;
+    // padding: 20px 0;
+    display: flex;
     clear: both;
     li {
         float: left;
-        width: 25%;
-        padding: 0 5px;
-        min-width: 218px;
+        // width: 100%;
+        overflow: hidden;
+        flex: 1;
+        padding: 0 8px;
+        // min-width: 180px;
+        // overflow: hidden;
         margin-bottom: 20px;
         box-sizing: border-box;
         .videolist-item-img-container {
             position: relative;
-            display: block;
-            width: 208px;
+            // display: block;
+            width: 100%;
             height: 120px;
             margin: 0 auto;
             border-radius: 5px;
             overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
+        .videolist-item-name{
+            margin-top: 5px;
+            text-align: center;
             width: 100%;
-            height: 100%;
-        }
-        p {
-            padding: 0 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 }
 
-.videolist-item-name {
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-wrap: normal;
-}
+// .videolist-item-name {
+//     text-align: center;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+//     word-wrap: normal;
+// }

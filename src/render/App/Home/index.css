@@ -12,7 +12,7 @@
   padding: 0;
 }
 .container nav {
-  width: 20vw;
+  width: 15vw;
   min-width: 200px;
   justify-content: flex-start;
   background-color: #e6e6e6;
@@ -40,7 +40,7 @@
   margin-right: 13px;
 }
 .container main {
-  width: 80vw;
+  width: 85vw;
   justify-content: flex-end;
 }
 .container main .main-header {
