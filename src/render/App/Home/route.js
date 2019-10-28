@@ -4,6 +4,7 @@ import './index.less'
 import Header from '../Header';
 import Home from './index';
 import Live from '../Live';
+import Uc from '../Uc';
 
 export default class HomeRoute extends React.PureComponent {
   constructor(props) {
@@ -19,6 +20,7 @@ export default class HomeRoute extends React.PureComponent {
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route path="/home/live" component={Live} />
+          <Route path="/home/uc" component={Uc} />
         </Switch>
       </div>
     );
