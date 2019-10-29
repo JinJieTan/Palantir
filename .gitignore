@@ -3,7 +3,7 @@
 /app/renderer
 /app/main
 /app/node_modules
-
+/image
 # production
 /build
 /dist
