@@ -16,7 +16,10 @@ export default function VideoList(props) {
               <div className="videolist-item-img-container">
                 <img src={imgUrl ? imgUrl : postDef} alt=""/>
               </div>
-              <p className="videolist-item-name">{name}</p>
+              <div className="videolist-item-name">
+                {/* <span >{name}</span> */}
+                {name}
+              </div>
             </Link>
           </li>
         );

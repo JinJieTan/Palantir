@@ -1,0 +1,45 @@
+.clearfix:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clear {
+  clear: both;
+}
+.videolist-container {
+  display: flex;
+  clear: both;
+}
+.videolist-container li {
+  float: left;
+  overflow: hidden;
+  flex: 1;
+  padding: 0 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.videolist-container li .videolist-item-img-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.videolist-container li .videolist-item-img-container img {
+  width: 100%;
+  height: 100%;
+}
+.videolist-container li .videolist-item-name {
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

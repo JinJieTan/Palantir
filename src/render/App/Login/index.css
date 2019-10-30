@@ -69,7 +69,16 @@
   background-size: 20px;
   border: none;
   font-weight: 100;
-  border-bottom: 0.5px solid #484856;
+  border-bottom: 0.5px solid #9c9cbd;
+}
+.login-container .login-content .form-name input::-webkit-input-placeholder {
+  color: #a3a9b9;
+}
+.login-container .login-content .form-name input::-moz-placeholder {
+  color: #a3a9b9;
+}
+.login-container .login-content .form-name input::-ms-input-placeholder {
+  color: #a3a9b9;
 }
 .login-container .login-content .form-password {
   margin-top: 20px;
@@ -84,13 +93,25 @@
   background-size: 20px;
   border: none;
   font-weight: 100;
-  border-bottom: 0.5px solid #484856;
+  border-bottom: 0.5px solid #9c9cbd;
+}
+.login-container .login-content .form-password input::-webkit-input-placeholder {
+  color: #a3a9b9;
+}
+.login-container .login-content .form-password input::-moz-placeholder {
+  color: #a3a9b9;
+}
+.login-container .login-content .form-password input::-ms-input-placeholder {
+  color: #a3a9b9;
 }
 .login-container .login-content .form-checkbox {
   margin-top: 20px;
 }
 .login-container .login-content .form-checkbox label:nth-of-type(1) {
   margin-right: 10px;
+}
+.login-container .login-content .form-checkbox label span {
+  color: #d4d3d3;
 }
 .login-container .login-content .form-checkbox .tui-checkbox:checked {
   background: #1673ff;
@@ -139,7 +160,7 @@
   width: 200px;
   height: 35px;
   color: white;
-  background-color: #0F4F99;
+  background-color: #2283D2;
   opacity: 0.5;
   border-radius: 3px;
   border-width: 0;
@@ -151,7 +172,7 @@
   cursor: pointer;
 }
 .login-container .login-content .form-login .login-button:hover {
-  background-color: #0E61AD;
+  background-color: #106ABD;
 }
 .login-container .login-content .form-other {
   margin-top: 20px;

@@ -45,12 +45,124 @@
 }
 .headerClass label:nth-of-type(2) {
   left: 95px;
-  top: 22px;
   width: 80px;
-  height: 20px;
+  height: 100%;
+  padding-top: 20px;
   font-size: 16px;
   text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+}
+.headerClass label:nth-of-type(2):hover + div {
+  display: block;
+}
+.headerClass .userInfo {
+  width: 200px;
+  background-color: #1890ff;
+  z-index: 100;
+  position: absolute;
+  top: 62px;
+  left: 660px;
+  display: none;
+  text-align: left;
+  padding: 1em;
+}
+.headerClass .userInfo:hover {
+  display: block;
+}
+.headerClass .userInfo div {
+  cursor: pointer;
+}
+.headerClass .userInfo div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+.headerClass .userInfo div:nth-of-type(1) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: static;
+  margin: 0 10px 0 5px;
+}
+.headerClass .userInfo div:nth-of-type(2) {
+  font-size: 12px;
+  margin: 5px 0 0 3px;
+}
+.headerClass .userInfo div:nth-of-type(2) span:nth-of-type(1) {
+  margin-right: 20px;
+}
+.headerClass .userInfo div:nth-of-type(3) {
+  width: 100%;
+  height: 0.5px;
+  background-color: #000;
+  margin-top: 2px;
+}
+.headerClass .userInfo div:nth-of-type(4) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.headerClass .userInfo div:nth-of-type(4) span:nth-of-type(1) {
+  float: left;
+}
+.headerClass .userInfo div:nth-of-type(4) span:nth-of-type(2) {
+  float: right;
+}
+.headerClass .userInfo div:nth-of-type(5) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.headerClass .userInfo div:nth-of-type(5) span:nth-of-type(1) {
+  float: left;
+}
+.headerClass .userInfo div:nth-of-type(5) span:nth-of-type(2) {
+  float: right;
+}
+.headerClass .userInfo div:nth-of-type(6) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.headerClass .userInfo div:nth-of-type(6) span:nth-of-type(1) {
+  float: left;
+}
+.headerClass .userInfo div:nth-of-type(6) span:nth-of-type(2) {
+  float: right;
+}
+.headerClass .userInfo div:nth-of-type(7) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.headerClass .userInfo div:nth-of-type(7) span:nth-of-type(1) {
+  float: left;
+}
+.headerClass .userInfo div:nth-of-type(7) span:nth-of-type(2) {
+  float: right;
+}
+.headerClass .userInfo div:nth-of-type(8) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.headerClass .userInfo div:nth-of-type(8) span:nth-of-type(1) {
+  float: left;
+}
+.headerClass .userInfo div:nth-of-type(8) span:nth-of-type(2) {
+  float: right;
+}
+.headerClass .userInfo div:nth-of-type(9) {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.headerClass .userInfo div:nth-of-type(9) button {
+  width: 120px;
+  height: 30px;
+  position: static;
 }
 .headerClass button {
   position: relative;
@@ -75,6 +187,7 @@
   font-size: 17px;
   text-align: center;
   cursor: pointer;
+  font-weight: bolder;
 }
 .headerClass button:nth-of-type(1):hover {
   background-color: #0E61AD;
@@ -94,6 +207,7 @@
   font-size: 17px;
   text-align: center;
   cursor: pointer;
+  font-weight: bolder;
 }
 .headerClass button:nth-of-type(2):hover {
   background-color: #0E61AD;
@@ -117,9 +231,10 @@
 }
 .headerClass button:nth-of-type(5) {
   position: relative;
-  left: 115px;
+  left: 100px;
   width: 131px;
   font-size: 14px;
+  margin-left: 30px;
   font-family: PingFang SC;
   border: 1px solid #bbbbbb;
   color: white;
@@ -138,13 +253,10 @@
   background-color: #0E61AD;
 }
 .headerClass input:nth-of-type(1) {
-  position: relative;
-  left: 50px;
-  top: 16px;
   width: 200px;
   height: 30px;
   color: white;
-  background-color: #0F4F99;
+  background-color: #164888;
   opacity: 0.5;
   border-radius: 3px;
   border-width: 0;
@@ -152,8 +264,9 @@
   outline: none;
   font-family: KaiTi;
   font-size: 17px;
-  text-align: center;
+  padding-left: 15px;
   cursor: pointer;
+  overflow: hidden;
 }
 .headerClass .btnGroup {
   display: flex;
@@ -168,4 +281,22 @@
   width: 31px;
   border: 1px solid #bbbbbb;
   color: #ffffff;
+}
+.headerClass .search {
+  border-radius: 15px;
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  height: 30px;
+  position: relative;
+  top: 18px;
+  left: 50px;
+}
+.headerClass .search img {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 3px;
+  left: 170px;
+  cursor: pointer;
 }
