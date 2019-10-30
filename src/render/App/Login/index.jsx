@@ -11,6 +11,7 @@ class App extends React.PureComponent {
       isShowAnimation: true,
       name: 1,
       isShowLogin: false,
+      inputType: 'password',
       imgSrc: require('../assets/image/4.jpeg'),
     };
     if (localStorage.getItem('username')) {
@@ -32,6 +33,16 @@ class App extends React.PureComponent {
       return;
     }
   };
+  showKey = () => {
+    this.setState({
+      inputType: 'text'
+    });
+  };
+  hideKey = () => {
+    this.setState({
+      inputType: 'password'
+    });
+  };
 
   handleChange = (tag, e) => {
     switch (tag) {
@@ -45,7 +56,7 @@ class App extends React.PureComponent {
   };
 
   render() {
-    const { imgSrc } = this.state;
+    const { imgSrc, inputType } = this.state;
     return (
       <div className="login-container">
         <div className="login-content">
@@ -54,7 +65,7 @@ class App extends React.PureComponent {
               Palantir
             </label>
           </div>
-          <div class="imgCon">
+          <div className="imgCon">
             <img src={imgSrc} />
           </div>
           <div className='form-name'>
@@ -63,15 +74,16 @@ class App extends React.PureComponent {
           </div>
           <div className='form-password'>
             {/* <label htmlFor="text">密码:</label> */}
-            <input type="password" placeholder="请输入密码" onChange={this.handleChange.bind(this, 'password')} />
+            <input type={inputType} placeholder="请输入密码" onChange={this.handleChange.bind(this, 'password')} />
+            <span className="show-pwd" onMouseDown={this.showKey} onMouseUp={this.hideKey}></span>
           </div>
           <div className='form-checkbox'>
             <label>
-              <input type="checkbox" name="1" class="tui-checkbox" />
+              <input type="checkbox" name="1" className="tui-checkbox" />
               <span>记住密码</span>
             </label>
             <label>
-              <input type="checkbox" name="1" class="tui-checkbox" />
+              <input type="checkbox" name="1" className="tui-checkbox" />
               <span>自动登录</span>
             </label>
           </div>
