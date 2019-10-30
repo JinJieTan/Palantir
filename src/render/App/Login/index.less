@@ -439,7 +439,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    // background: rgba(0, 0, 0, 0.1);
+    // background: rgba(255, 255, 255, 0.3);
     // opacity: 0.1;
     .login-name{
       // padding-top: 70px;
@@ -474,7 +474,16 @@
         background-size: 20px;
         border: none;
         font-weight: 100;
-        border-bottom: .5px solid#484856;
+        border-bottom: .5px solid#9c9cbd;
+        &::-webkit-input-placeholder{
+          color: rgb(163, 169, 185);
+        }
+        &::-moz-placeholder{
+          color: rgb(163, 169, 185);
+        }
+        &::-ms-input-placeholder{
+          color: rgb(163, 169, 185);
+        }
       }
     }
     .form-password{
@@ -490,8 +499,16 @@
         background-size: 20px;
         border: none;
         font-weight: 100;
-        border-bottom: .5px solid#484856;
-        // color: seashell;
+        border-bottom: .5px solid#9c9cbd;
+        &::-webkit-input-placeholder{
+          color: rgb(163, 169, 185);
+        }
+        &::-moz-placeholder{
+          color: rgb(163, 169, 185);
+        }
+        &::-ms-input-placeholder{
+          color: rgb(163, 169, 185);
+        }
       }
     }
     .show-pwd {
@@ -510,6 +527,9 @@
       label{
         &:nth-of-type(1){
           margin-right: 10px;
+        }
+        span{
+          color: rgb(212, 211, 211);
         }
       }
       .tui-checkbox:checked {
@@ -559,7 +579,7 @@
         width: 200px;
         height: 35px;
         color:white;
-        background-color: #0F4F99;
+        background-color: #2283D2;
         opacity: 0.5;
         border-radius: 3px;
         border-width: 0;
@@ -570,7 +590,7 @@
         text-align: center;
         cursor: pointer;
         &:hover{
-          background-color: #0E61AD;
+          background-color: #106ABD;
         }
       }
     }
