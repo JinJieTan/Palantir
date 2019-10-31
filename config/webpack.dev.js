@@ -5,6 +5,7 @@ const os = require('os');
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const path = require('path');
 const port = require('../global.config');
+const vueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
   entry: {
     app: path.resolve(__dirname, '../src/render/App/index.js'),
@@ -23,6 +24,15 @@ module.exports = {
         include: __dirname, // 指定检查的目录
         exclude: /node_modules/,
       },
+      {
+        test: /\.vue$/,
+        use: [
+          {
+            loader: 'vue-loader',
+          },
+        ],
+      },
+
       {
         oneOf: [
           {
@@ -60,15 +70,18 @@ module.exports = {
             ],
           },
           {
-            test: /\.(jpg|jpeg|bmp|svg|png|webp|gif)$/,
-            loader: 'url-loader',
-            options: {
-              limit: 8 * 1024,
-              name: '[name].[hash:8].[ext]',
-            },
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  limit: 8192,
+                },
+              },
+            ],
           },
           {
-            exclude: /\.(js|json|less|css|jsx)$/,
+            exclude: /\.(js|json|less|css|jsx|vue)$/,
             loader: 'file-loader',
             options: {
               outputPath: 'media/',
@@ -95,6 +108,7 @@ module.exports = {
         minifyURLs: true,
       },
     }),
+    new vueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HardSourceWebpackPlugin(),
@@ -107,7 +121,7 @@ module.exports = {
     hot: true,
   },
   resolve: {
-    extensions: ['.js', '.json', '.jsx'],
+    extensions: ['.js', '.json', '.jsx', 'vue'],
   },
   optimization: {
     runtimeChunk: true,

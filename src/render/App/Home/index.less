@@ -6,6 +6,7 @@
 }
 .container {
   display: flex;
+  color: #4e4d4d;
   * {
     margin: 0;
     padding: 0;
@@ -16,8 +17,9 @@
     justify-content:flex-start;
     // height: 936px;
     // line-height: 20px;
-    background-color: rgba(230, 230, 230, 1);
+    //background-color: rgba(230, 230, 230, 1);
     // color: rgba(16, 16, 16, 1);
+    background-color:#b3adad21;
     font-size: 14px;
     // text-align: center;
     font-family: Roboto;
@@ -50,7 +52,7 @@
     .main-header {
       width: 100%;
       height: 60px;
-      background: #000;
+      background: #c3c1c169;
     }
     .wrapper {
       padding: 10px;
@@ -94,7 +96,6 @@
         }
         span.more {
           font-size: 20px;
-          color: #0078d7;
           text-decoration: none;
           cursor: pointer;
           color: black;
@@ -108,11 +109,24 @@
         }
       }
     }
-    .home-life{
+    .home-chunk {
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: cursive;
+      .home-chunk-l {
+        width: 62%;
+      }
+      .home-chunk-r {
+        width: 35%;
+      }
+    }
+    .video-list {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      // height: calc(100vh - 67px);
       .liveScan{
         display: inline-block;
         font-size: 18px;
