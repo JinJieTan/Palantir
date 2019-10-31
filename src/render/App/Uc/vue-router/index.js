@@ -1,14 +1,11 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
-
-let router = new VueRouter({
-  routes: [
+const routes = [
     {
       path: '/',
       components: require('../app.vue'),
     },
-  ],
-});
-export default router;
+    {
+      path: '/helloworld',
+      components: require('../components/HelloWorld.vue')
+    }
+  ]
+export default routes;
