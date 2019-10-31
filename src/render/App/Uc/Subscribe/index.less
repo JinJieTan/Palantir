@@ -1,0 +1,47 @@
+@import '../../assets/css/baseCss.less';
+
+.subscribe {
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex; /*flex布局*/
+  .sider {
+    padding-right: 16px;
+    width: 280px;
+    display: inline-block;
+    text-align: center;
+    & > div {
+      padding: 60px 0;
+      border: 1px solid @disable_color;
+      h4 {
+        margin-bottom: 20px;
+        color: @orange;
+      }
+      .follow {
+        padding-bottom: 75px;
+        li {
+          font-size: @body_font_size;
+          //&:not(:last-child) {
+          //margin-bottom: 27px;
+          padding: 14px;
+          //}
+          &:hover {
+
+          }
+          color: @orange;
+          & > span {
+            margin-right: 10px;
+            color: @orange;
+            font-size: @body_font_size;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    flex: 1;
+    padding: 17px;
+    display: inline-block;
+    border: 1px solid @disable_color;
+  }
+}
