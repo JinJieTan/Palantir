@@ -6,10 +6,11 @@ const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const path = require('path');
 const port = require('../global.config');
 const vueLoaderPlugin = require('vue-loader/lib/plugin');
+
 module.exports = {
   entry: {
     app: path.resolve(__dirname, '../src/render/App/index.js'),
-    vendor: ['react'],
+    vendor: ['react', 'vue', 'dva', 'vuex', 'vue-router', 'react-dom', 'axios', 'js-sha1'],
   },
   output: {
     filename: '[name].[hash:8].js',
@@ -122,6 +123,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.json', '.jsx', 'vue'],
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+      '@c': path.resolve(__dirname, '../src/render/App/components'),
+      '@v': path.resolve(__dirname, '../src/render/Vue'),
+    },
   },
   optimization: {
     runtimeChunk: true,

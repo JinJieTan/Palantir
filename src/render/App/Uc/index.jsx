@@ -8,7 +8,7 @@ import Moment from './Moment';
 import MyVideos from './MyVideos';
 import Subscribe from './Subscribe';
 import avatarDef from '../assets/image/avatar-def.png';
-import test from './startVue.js';
+import test from '@v/startVUe.js';
 import './index.less';
 
 class Uc extends Component {
