@@ -18,7 +18,7 @@
       width: 45px;
       height: 44px;
       border-radius: 50%;
-      margin-right: 10px;
+      margin-right: 10px;   
     }
     &:nth-of-type(2) {
       position: relative;
@@ -50,7 +50,9 @@
       padding-top: 20px;
       font-size: 16px;
       text-align: left;
+      color: #f5f5f5;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: KaiTi;
       cursor: pointer;
       &:hover + div {
         display: block;
@@ -201,7 +203,8 @@
       left: 30px;
       width: 29px;
       top: 18px;
-      background-color: #0F4F99;
+      color: white;
+      background-color: #5fa1ef;
       opacity: 0.5;
       border-radius: 3px;
       border-width: 0;
@@ -220,7 +223,9 @@
       width: 29px;
       left: 35px;
       top: 18px;
-      background-color: #0F4F99;
+      margin-right: 10px;
+      color: white;
+      background-color: #5fa1ef;
       opacity: 0.5;
       border-radius: 3px;
       border-width: 0;
@@ -238,18 +243,19 @@
     &:nth-of-type(3) {
       border: none;
       background-color: rgba(255, 255, 255, 0);
-      left: 40px;
-      color: rgba(16, 16, 16, 1);
+      left: 40px;    
+      color: #f5f5f5;
       font-size: 20px;
-      font-family: Roboto-regular;
+      font-family: KaiTi;
       margin-right: 10px;
     }
     &:nth-of-type(4) {
       border: none;
       background: rgba(255, 255, 255, 0);
       left: 40px;
-      color: rgba(16, 16, 16, 1);
+      color: #f5f5f5;
       font-size: 20px;
+      font-family: KaiTi;
       margin-right: 10px;
     }
     &:nth-of-type(5) {
@@ -260,9 +266,10 @@
       margin-left: 30px;
       font-family: PingFang SC;
       border: 1px solid rgba(187, 187, 187, 1);
-      color: white;
-      background-color: #0F4F99;
-      opacity: 0.5;
+      color: #f5f5f5;
+     // background-color: #0F4F99;
+      background-color:#82a8d87a;
+     // opacity: 0.5;
       border-radius: 3px;
       border-width: 0;
       margin: 0;
@@ -280,9 +287,10 @@
   input:nth-of-type(1) {
     width: 200px;
     height: 30px;
-    color: white;
-    background-color: rgb(22, 72, 136);
-    opacity: 0.5;
+    color: #f5f5f5;
+   // background-color: rgb(22, 72, 136);
+    background-color: #82a8d87a;
+    //opacity: 0.5;
     border-radius: 3px;
     border-width: 0;
     margin: 0;
@@ -295,9 +303,12 @@
     overflow: hidden;
     // &:hover{
     //   background-color: #0E61AD;
-    // }
+    // }  
+  } 
+  ::-webkit-input-placeholder {
+    color: #f5f5f5e3;
+    font-size: 17px;    
   }
-
   .btnGroup {
     display: flex;
     justify-content: flex-end;
