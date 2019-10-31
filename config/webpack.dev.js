@@ -81,7 +81,7 @@ module.exports = {
             ],
           },
           {
-            exclude: /\.(js|json|less|css|jsx)$/,
+            exclude: /\.(js|json|less|css|jsx|vue)$/,
             loader: 'file-loader',
             options: {
               outputPath: 'media/',

@@ -126,7 +126,7 @@ class Uc extends Component {
           {routeConfig.map((item, index) => {
             if (item.isShowOnNav) {
               return (
-                <li key={item + index}>
+                <li key={ index}>
                   <Link className="uc-nav-link" to={item.path}>
                     {item.title}
                   </Link>
@@ -141,7 +141,7 @@ class Uc extends Component {
         {/* 主体 */}
         <div className="uc-main">
           {routeConfig.map((item, index) => {
-            return <Route key={item + index} path={item.path} exact={item.exact} component={item.component} />;
+            return <Route key={index} path={item.path} exact={item.exact} component={item.component} />;
           })}
         </div>
       </div>

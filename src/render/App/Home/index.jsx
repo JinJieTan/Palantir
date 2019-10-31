@@ -76,7 +76,7 @@ export default class App extends React.PureComponent {
             </div>
             <div className="recommend-chunk">
               <div className="recommend-list">
-                {recommendList.map(() => <RecommendItem imgSrc={imgSrc1} />)}
+                {recommendList.map((item,index) => <RecommendItem imgSrc={imgSrc1} key={index} />)}
               </div>
             </div>
           </div>

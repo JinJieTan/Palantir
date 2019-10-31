@@ -94,8 +94,8 @@ class App extends React.PureComponent {
           </div>
           {/* <button className="login-button">自动注册</button> */}
           <div className='form-other'>
-            <a href="javascript:void(0)">自动注册</a>
-            <a href="javascript:void(0)">忘记密码</a>
+            <a href="">自动注册</a>
+            <a href="">忘记密码</a>
           </div>
         </div>
       </div>
