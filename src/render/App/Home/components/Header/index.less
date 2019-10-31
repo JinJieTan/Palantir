@@ -1,0 +1,38 @@
+.home-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 24px;
+  .title {
+    font-size: 24px;
+  }
+  .more {
+    font-size: 18px;
+    cursor: pointer;
+    color: #868585;
+    text-decoration: none;
+    transition: all .2s;
+    &:hover {
+      color: #0082df;
+      transition: all .2s;
+    }
+    &:hover span {
+      background: #0082df;
+      transition: all .2s;
+    }
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #868585;
+      color: #fff;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 50%;
+      transition: all .2s;
+      vertical-align: text-bottom;
+    }
+  }
+
+}

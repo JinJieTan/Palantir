@@ -3,9 +3,12 @@ import { ipcRenderer } from 'electron';
 
 import RecommendItem from './components/Recommend';
 import HotRecommendItem from './components/HotRecommend';
+import HomeHeader from './components/Header';
+import HomeContent from './components/Content';
 
 import { clearSession } from '../../utills/API/index';
 import './index.less'
+import HomeSider from './components/Sider';
 
 export default class App extends React.PureComponent {
   constructor(props) {
@@ -91,8 +94,26 @@ export default class App extends React.PureComponent {
               </div>
             </div>
           </div>
-          <div className="home-life">
-            { liveScan(20) }
+          <div className="home-life home-chunk">
+            <div className="home-chunk-l">
+              <HomeHeader title="生活" />
+              <HomeContent />
+            </div>
+            <div className="home-chunk-r">
+              <HomeSider />
+            </div>
+          </div>
+          <div className="home-game home-chunk">
+            <div className="home-chunk-l">
+              <HomeHeader title="游戏" />
+              <HomeContent />
+            </div>
+            <div className="home-chunk-r">
+              <HomeSider />
+            </div>
+          </div>
+          <div className="video-list">
+           { liveScan(20) }
           </div>
           <h1>Home</h1>
           <button

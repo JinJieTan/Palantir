@@ -6,6 +6,7 @@
 }
 .container {
   display: flex;
+  color: #4e4d4d;
   * {
     margin: 0;
     padding: 0;
@@ -95,7 +96,6 @@
         }
         span.more {
           font-size: 20px;
-          color: #0078d7;
           text-decoration: none;
           cursor: pointer;
           color: black;
@@ -109,11 +109,24 @@
         }
       }
     }
-    .home-life{
+    .home-chunk {
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: cursive;
+      .home-chunk-l {
+        width: 62%;
+      }
+      .home-chunk-r {
+        width: 35%;
+      }
+    }
+    .video-list {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      // height: calc(100vh - 67px);
       .liveScan{
         display: inline-block;
         font-size: 18px;
