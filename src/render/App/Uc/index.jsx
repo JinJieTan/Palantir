@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'dva';
 import { Route } from 'dva/router';
 import { Link } from 'react-router-dom';
 import Collections from './Collections';
@@ -7,9 +8,10 @@ import Moment from './Moment';
 import MyVideos from './MyVideos';
 import Subscribe from './Subscribe';
 import avatarDef from '../assets/image/avatar-def.png';
+import test from './startVue.js';
 import './index.less';
 
-export default class Uc extends Component {
+class Uc extends Component {
   constructor(props) {
     super();
     this.state = {
@@ -94,7 +96,9 @@ export default class Uc extends Component {
       ],
     };
   }
-
+  componentDidMount() {
+    test(this.props);
+  }
   render() {
     const { routeConfig } = this.state;
     return (
@@ -122,7 +126,7 @@ export default class Uc extends Component {
           {routeConfig.map((item, index) => {
             if (item.isShowOnNav) {
               return (
-                <li key={item + index}>
+                <li key={ index}>
                   <Link className="uc-nav-link" to={item.path}>
                     {item.title}
                   </Link>
@@ -133,13 +137,16 @@ export default class Uc extends Component {
             }
           })}
         </ul>
+        <h1 id="test">React</h1>
         {/* 主体 */}
         <div className="uc-main">
           {routeConfig.map((item, index) => {
-            return <Route key={item + index} path={item.path} exact={item.exact} component={item.component} />;
+            return <Route key={index} path={item.path} exact={item.exact} component={item.component} />;
           })}
         </div>
       </div>
     );
   }
 }
+
+export default connect()(Uc);
