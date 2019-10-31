@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    ahahahhahahah
+    <router-link to='/helloworld'>测试vue路由</router-link>
+    <router-view />
   </div>
 </template>
 
