@@ -18,10 +18,10 @@ export default class Header extends React.PureComponent {
                 <label htmlFor="text">
                     Palantir
                 </label>
-                <button>{'<'}</button>
-                <button>{'>'}</button>
-                <button onClick={() => this.props.history.push(`/home`)}>首页</button>
-                <button onClick={() => this.props.history.push(`/home/live`)}>直播</button>
+                <button className="header-btn" onClick={() => this.props.history.goBack()}>{'<'}</button>
+                <button className="header-btn" onClick={() => this.props.history.go(1)}>{'>'}</button>
+                <button className="header-btn" onClick={() => this.props.history.push(`/home`)}>首页</button>
+                <button className="header-btn" onClick={() => this.props.history.push(`/home/live`)}>直播</button>
                 <div className="search">
                     <input placeholder="搜索"/>
                     <img src={searchImg} alt=""/>
