@@ -12,13 +12,14 @@
   clear: both;
 }
 .videolist-container {
-  display: flex;
+  width: 100%;
   clear: both;
+  box-sizing: border-box;
 }
 .videolist-container li {
   float: left;
   overflow: hidden;
-  flex: 1;
+  width: 25%;
   padding: 0 8px;
   margin-bottom: 20px;
   box-sizing: border-box;
