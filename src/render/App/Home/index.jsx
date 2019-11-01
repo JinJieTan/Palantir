@@ -1,14 +1,15 @@
 import React from 'react';
 import { ipcRenderer } from 'electron';
+import {Link} from 'dva/router';
 
 import RecommendItem from './components/Recommend';
 import HotRecommendItem from './components/HotRecommend';
 import HomeHeader from './components/Header';
 import HomeContent from './components/Content';
+import HomeSider from './components/Sider';
 
 import { clearSession } from '../../utills/API/index';
 import './index.less'
-import HomeSider from './components/Sider';
 
 export default class App extends React.PureComponent {
   constructor(props) {
@@ -16,44 +17,18 @@ export default class App extends React.PureComponent {
     this.state = {
       recommendList: [1, 2, 3, 4, 5, 6],
       hotRecommendList: [1, 2, 3, 4],
-      imgSrc: require('../assets/image/4.jpeg'),
-      imgSrc1: require('../assets/image/home_sample.jpg'),
+      imgSrc1: require('../assets/image/4.jpeg'),
       starsImg: require('../assets/image/Stars.png'),
       listImage: require('../assets/image/manage.png')
     };
   }
   render() {
-    const { recommendList, hotRecommendList, imgSrc1, imgSrc } = this.state;
+    const { recommendList, hotRecommendList, imgSrc1} = this.state;
     const bgImg = {
       background: `url(${imgSrc1}) no-repeat`,
       backgroundSize: "100% 100%"
     };
-    let liveScan = (length) => {
-
-      var res = [];
-
-      for (var i = 0; i < length; i++) {
-
-          res.push(<div className="liveScan">
-            <img src={imgSrc} className="scanImg"/>
-            <p className='title'>视频标题</p>
-            <div>
-              <div className="">
-                <img src={imgSrc} className="icon"/>
-                99999
-              </div>
-              <div>
-                <img src={imgSrc} className="icon"/>
-                99999
-              </div>
-            </div>
-          </div>)
-
-      }
-
-      return res
-
-  }
+    
     return (
       <div className="container">
         <nav>
@@ -86,11 +61,11 @@ export default class App extends React.PureComponent {
           <div className="home-hot-recommend">
             <div className="home-content-header">
               <h3 className="title">热门推荐</h3>
-              <span className="more">更多 >></span>
+              <Link to="/home/more_video" className="more">查看全部 <span>☛</span></Link>
             </div>
             <div className="home-hot-recommend-content">
               <div className="home-hot-recommend-list">
-                {hotRecommendList.map(() => <HotRecommendItem imgSrc={imgSrc1} title="德云色" author="笑笑" status={1} num={32322} />)}
+                {hotRecommendList.map((_, index) => <HotRecommendItem key={index} imgSrc={imgSrc1} title="德云色" author="笑笑" status={1} num={32322} />)}
               </div>
             </div>
           </div>
@@ -106,14 +81,11 @@ export default class App extends React.PureComponent {
           <div className="home-game home-chunk">
             <div className="home-chunk-l">
               <HomeHeader title="游戏" />
-              <HomeContent />
+              <HomeContent id="game" />
             </div>
             <div className="home-chunk-r">
-              <HomeSider />
+              <HomeSider id="game" />
             </div>
-          </div>
-          <div className="video-list">
-           { liveScan(20) }
           </div>
           <h1>Home</h1>
           <button
