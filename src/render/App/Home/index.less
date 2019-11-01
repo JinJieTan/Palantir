@@ -90,15 +90,38 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 10px;
+        font-family: cursive;
+        line-height: 24px;
         h3.title {
           font-size: 24px;
           color: #101010;
         }
-        span.more {
-          font-size: 20px;
-          text-decoration: none;
+        .more {
+          font-size: 18px;
           cursor: pointer;
-          color: black;
+          color: #868585;
+          text-decoration: none;
+          transition: all .2s;
+          &:hover {
+            color: #0082df;
+            transition: all .2s;
+          }
+          &:hover span {
+            background: #0082df;
+            transition: all .2s;
+          }
+          span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #868585;
+            color: #fff;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 50%;
+            transition: all .2s;
+            vertical-align: text-bottom;
+          }
         }
       }
       .home-hot-recommend-content {
@@ -121,42 +144,6 @@
       }
       .home-chunk-r {
         width: 35%;
-      }
-    }
-    .video-list {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      .liveScan{
-        display: inline-block;
-        font-size: 18px;
-        width: 22%;
-        // overflow: hidden;
-        margin: 15px 0;
-        .title{
-          font-size: 14px;
-        }
-        div{
-          margin-top: 5px;
-          display: flex;
-          font-size: 14px;
-          margin-right: 7px;
-        }
-        .scanImg{
-          width: 100%;
-          height: 151px;
-          background-color: black;
-        }
-        p{
-          margin: 0;
-        }
-        .icon{
-          width: 18px;
-          height: 18px;
-          border-radius: 50%;
-          background-color: black;
-          margin-right: 3px;
-        }
       }
     }
   }

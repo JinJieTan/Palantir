@@ -1,17 +1,17 @@
 import React from 'react';
-
+import {Link} from 'dva/router';
 
 import "./index.less";
 
 const imgSrc = require("../../../assets/image/home_sample.jpg");
 
 const HomeSider = props => {
-  const {list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]} = props;
+  const {list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0], id = ""} = props;
   return (
     <div className="home-sider">
       <ul>
         {list.map((item, index) => index === 0 ? 
-          <li>
+          <li key={1 + id}>
             <p>{index + 1}</p>
             <div className="sider-item sider-item-fir">
               <img src={imgSrc} alt="" srcset=""/>
@@ -23,7 +23,7 @@ const HomeSider = props => {
               </div>
             </div>
           </li> :
-          <li>
+          <li key={item + id}>
             <p>{index + 1}</p>
             <div className="sider-item">
               <p>监听数据的变化,通俗点来讲就是观察一个值的变化，观察的这</p>
@@ -31,10 +31,9 @@ const HomeSider = props => {
           </li>
         )}
       </ul>
-      <div className="more">
+      <Link to="/home/more_video" className="more">
         查看更多 ☛
-        <span></span>
-      </div>
+      </Link>
     </div>
   )
 }
