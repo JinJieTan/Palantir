@@ -7,8 +7,8 @@ export default class Live extends PureComponent {
     constructor(props) {
 		super(props);
 		this.state = {
-            imgSrc: require('../assets/image/4.jpeg'),
-            banSrc:require('../assets/image/ban.png')
+            imgSrc: require('@a/assets/image/4.jpeg'),
+            banSrc:require('@a/assets/image/ban.png')
 		};
 	}
     render() {

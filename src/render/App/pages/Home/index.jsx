@@ -8,7 +8,7 @@ import HomeHeader from './components/Header';
 import HomeContent from './components/Content';
 import HomeSider from './components/Sider';
 
-import { clearSession } from '../../utills/API/index';
+import { clearSession } from '@/render/utills/API/index';
 import './index.less'
 
 export default class App extends React.PureComponent {
@@ -17,9 +17,9 @@ export default class App extends React.PureComponent {
     this.state = {
       recommendList: [1, 2, 3, 4, 5, 6],
       hotRecommendList: [1, 2, 3, 4],
-      imgSrc1: require('../assets/image/4.jpeg'),
-      starsImg: require('../assets/image/Stars.png'),
-      listImage: require('../assets/image/manage.png')
+      imgSrc1: require('@a/assets/image/4.jpeg'),
+      starsImg: require('@a/assets/image/Stars.png'),
+      listImage: require('@a/assets/image/manage.png')
     };
   }
   render() {

@@ -1,28 +1,28 @@
 .animation1 {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/image/4.jpeg');
+  background-image: url('../../assets/image/4.jpeg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .animation2 {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/image/2.jpeg');
+  background-image: url('../../assets/image/2.jpeg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .animation3 {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/image/5.jpeg');
+  background-image: url('../../assets/image/5.jpeg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .login-css {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/image/11.gif');
+  background-image: url('../../assets/image/11.gif');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -31,7 +31,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: url(../assets/image/bg1.jpg) no-repeat 0px 0px;
+  background: url(../../assets/image/bg1.jpg) no-repeat 0px 0px;
   background-size: 100% 100%;
 }
 .login-container .login-content {
@@ -65,7 +65,7 @@
   font-size: 18px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   outline: none;
-  background: url(../assets/image/adm.png) no-repeat 0px 7px;
+  background: url(../../assets/image/adm.png) no-repeat 0px 7px;
   background-size: 20px;
   border: none;
   font-weight: 100;
@@ -89,7 +89,7 @@
   color: #000;
   font-size: 18px;
   outline: none;
-  background: url(../assets/image/key.png) no-repeat 0px 10px;
+  background: url(../../assets/image/key.png) no-repeat 0px 10px;
   background-size: 20px;
   border: none;
   font-weight: 100;
