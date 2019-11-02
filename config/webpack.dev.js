@@ -127,6 +127,7 @@ module.exports = {
       '@': path.resolve(__dirname, '../src'),
       '@c': path.resolve(__dirname, '../src/render/App/components'),
       '@v': path.resolve(__dirname, '../src/render/Vue'),
+      '@a': path.resolve(__dirname, '../src/render/App'),
     },
   },
   optimization: {

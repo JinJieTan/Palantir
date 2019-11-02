@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 
 import './index.less';
 
-const imgSrc = require("../assets/image/4.jpeg")
+const imgSrc = require("@a/assets/image/4.jpeg")
 
 class MoreVideo extends PureComponent {
 

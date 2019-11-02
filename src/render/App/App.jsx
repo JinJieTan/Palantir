@@ -3,8 +3,8 @@ import { HashRouter, Route, Switch } from 'dva/router';
 import { connect } from 'dva';
 import { ipcRenderer } from 'electron';
 import ErrorBoundary from './ErrorBoundary/';
-import Login from './Login/index';
-import Home from './Home/route';
+import Login from './pages/Login';
+import Home from './pages/Home/route';
 import './globalstyle/index.css';
 class App extends React.PureComponent {
   componentDidMount() {

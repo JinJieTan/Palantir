@@ -3,7 +3,7 @@ import {Link} from 'dva/router';
 
 import "./index.less";
 
-const imgSrc = require("../../../assets/image/home_sample.jpg");
+const imgSrc = require("@a/assets/image/home_sample.jpg");
 
 const HomeSider = props => {
   const {list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0], id = ""} = props;
