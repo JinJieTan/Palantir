@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
+import {Link} from 'dva/router';
+
 import { ipcRenderer } from 'electron';
 import { login, authentication } from '../../../utills/API/index' //'../../../utills/API/index';
 import sha1 from 'js-sha1';
@@ -94,7 +96,7 @@ class App extends React.PureComponent {
           </div>
           {/* <button className="login-button">自动注册</button> */}
           <div className='form-other'>
-            <a href="">自动注册</a>
+            <Link to="/regist">自动注册 </Link>
             <a href="">忘记密码</a>
           </div>
         </div>

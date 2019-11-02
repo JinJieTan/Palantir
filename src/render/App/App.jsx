@@ -5,6 +5,7 @@ import { ipcRenderer } from 'electron';
 import ErrorBoundary from './ErrorBoundary/';
 import Login from './pages/Login';
 import Home from './pages/Home/route';
+import Regist from './pages/Login/Regist/index'
 import './globalstyle/index.css';
 class App extends React.PureComponent {
   componentDidMount() {
@@ -37,6 +38,7 @@ class App extends React.PureComponent {
             <div className="exit" style={{ width: 20, height: 20 }} onClick={this.exit}></div>
           </div> */}
           <Switch>
+            <Route path="/regist" component={Regist} />
             <Route path="/login" component={Login} />
             <Route path="/home" component={Home} />
             <Route path="/" component={Login} />
