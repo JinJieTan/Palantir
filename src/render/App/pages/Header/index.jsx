@@ -5,8 +5,8 @@ export default class Header extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            imgSrc: require('../assets/image/4.jpeg'),
-            searchImg: require('../assets/image/search.png')
+            imgSrc: require('@a/assets/image/4.jpeg'),
+            searchImg: require('@a/assets/image/search.png')
         };
     }
 

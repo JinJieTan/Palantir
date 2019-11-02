@@ -5,13 +5,13 @@ import Header from '../Header';
 import Home from './index';
 import Live from '../Live';
 import MoreVideo from '../MoreVideo';
-import Uc from '../Uc';
+import Uc from '../../Uc';
 
 export default class HomeRoute extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      imgSrc: require('../assets/image/4.jpeg'),
+      imgSrc: require('../../assets/image/4.jpeg'), 
     };
   }
   render() {

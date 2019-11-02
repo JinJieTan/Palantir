@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import "./index.less";
-const imgSrc = require("../../../assets/image/home_sample.jpg");
+const imgSrc = require("@a/assets/image/home_sample.jpg");
 
 const HomeContentItme = props => {
   const { list } = props;
