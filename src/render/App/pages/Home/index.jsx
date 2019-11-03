@@ -97,7 +97,7 @@ export default class App extends React.PureComponent {
                   alert('退出登陆成功');
                 }
               }
-              ipcRenderer.send('Enter-Home', { width: 300, height: 450 });
+              ipcRenderer.send('Enter-Home', { width: 400, height: 600 });
             }}
           >
             返回登陆
