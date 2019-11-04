@@ -14,7 +14,7 @@ const HomeSider = props => {
           <li key={1 + id}>
             <p>{index + 1}</p>
             <div className="sider-item sider-item-fir">
-              <img src={imgSrc} alt="" srcset=""/>
+              <img src={imgSrc} alt="" />
               <div className="sider-item-cont">
                 <p>官网中是这么说的：除了数据属性，Vue 实例还暴露了一些有用的实例属性与方法。它们都有前缀 $，以便与用户定义的属性区分开来。例如</p>
                 <div className="play-num">
