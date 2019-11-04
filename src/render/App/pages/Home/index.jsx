@@ -7,28 +7,36 @@ import HotRecommendItem from './components/HotRecommend';
 import HomeHeader from './components/Header';
 import HomeContent from './components/Content';
 import HomeSider from './components/Sider';
+import HomeSwiper from './components/Swiper';
 
-import { clearSession } from '@/render/utills/API/index';
+import { clearSession, getHomeImages } from '@/render/utills/API/index';
 import './index.less'
 
 export default class App extends React.PureComponent {
+
   constructor(props) {
     super(props);
-    this.state = {
-      recommendList: [1, 2, 3, 4, 5, 6],
-      hotRecommendList: [1, 2, 3, 4],
-      imgSrc1: require('@a/assets/image/4.jpeg'),
-      starsImg: require('@a/assets/image/Stars.png'),
-      listImage: require('@a/assets/image/manage.png')
-    };
+    this.getImages = this.getImages.bind(this);
   }
+
+  state = {
+    recommendList: [1, 2, 3, 4, 5, 6],
+    hotRecommendList: [1, 2, 3, 4],
+    imgSrc1: require('@a/assets/image/4.jpeg'),
+    starsImg: require('@a/assets/image/Stars.png'),
+    listImage: require('@a/assets/image/manage.png'),
+    imgSrcList: [
+      require('@a/assets/image/1.jpeg'),
+      require('@a/assets/image/2.jpeg'),
+      require('@a/assets/image/3.jpeg'),
+      require('@a/assets/image/4.jpeg'),
+      require('@a/assets/image/5.jpeg'),
+    ]
+  }
+
   render() {
-    const { recommendList, hotRecommendList, imgSrc1} = this.state;
-    const bgImg = {
-      background: `url(${imgSrc1}) no-repeat`,
-      backgroundSize: "100% 100%"
-    };
-    
+    const { recommendList, hotRecommendList, imgSrc1, imgSrcList} = this.state;
+
     return (
       <div className="container">
         <nav>
@@ -47,11 +55,7 @@ export default class App extends React.PureComponent {
         <main>
           <div className="main-header"></div>
           <div className="wrapper">
-            <div className="swiper-container">
-              <div className="swiper">
-                <div className="swiper-item" style={bgImg}></div>
-              </div>
-            </div>
+           <HomeSwiper imgSrcList={imgSrcList} />
             <div className="recommend-chunk">
               <div className="recommend-list">
                 {recommendList.map((item,index) => <RecommendItem imgSrc={imgSrc1} key={index} />)}
@@ -106,5 +110,16 @@ export default class App extends React.PureComponent {
 
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.getImages()
+  }
+
+  async getImages() {
+    let result = await getHomeImages();
+    if(result.code === 0) {
+      let {swiper, hot, recommended} = result.data;
+    }
   }
 }
