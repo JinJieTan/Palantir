@@ -19,7 +19,7 @@ export default props => {
             </div>
             <div className="hot-recommend-info">
                 <div className="hot-recommend-avatar">
-                    <img src={imgSrc} alt="" srcset=""/>
+                    <img src={imgSrc} alt="" />
                 </div>
                 <div className="hot-recommend-name">
                     <p className="title">{title}</p>

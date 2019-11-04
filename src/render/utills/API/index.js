@@ -14,6 +14,9 @@ export const authentication = () => ajax(`${prev}/authentication`);
 //退出登陆，清除免密码登陆
 export const clearSession = () => ajax(`${prev}/clearSession`);
 
+// 首页图片获取
+export const getHomeImages = () => ajax(`${prev}/home-images`)
+
 
 //这里如果考虑上线需要加上prev前缀，三元运算符根据环境变量  不考虑上线所以我直接写死了
 

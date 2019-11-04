@@ -1,0 +1,78 @@
+.home-swiper {
+  width: 60%;
+  height: 405px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .swiper-btn {
+    opacity: 1;
+    transition: all .2s;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    background: #0082df;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+
+    .swiper-item {
+      width: 100%;
+      height: 100%;
+      float: left;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .swiper-tabs {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: 0;
+    z-index: 1;
+
+    li {
+      width: 10px;
+      height: 10px;
+      background: #6b6a6a;
+      float: left;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.selected {
+        background: #e8e8e8;
+      }
+    }
+  }
+
+  .swiper-btn {
+    width: 30px;
+    height: 80px;
+    background: rgba(134, 134, 134, 0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .2s;
+    &.swiper-btn-right {
+      left: auto;
+      right: 0;
+    }
+  }
+}

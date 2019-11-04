@@ -12,7 +12,7 @@ export default props => {
     return (
         <div className="recommend-item">
             <div className="recommend-desc" style={bgImg}>
-                {/* <img src={imgSrc} alt="" srcset=""/> */}
+                {/* <img src={imgSrc} alt="" /> */}
             </div>
             <div className="recommend-mask">
                 <span className="time-length">03:11</span>
