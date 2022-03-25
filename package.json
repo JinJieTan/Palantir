@@ -23,7 +23,7 @@
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-zent": "^2.0.1",
     "css-loader": "^2.1.1",
-    "electron": "^5.0.2",
+    "electron": "^13.6.6",
     "file-loader": "^3.0.1",
     "hard-source-webpack-plugin": "^0.13.1",
     "html-loader": "^0.5.5",
